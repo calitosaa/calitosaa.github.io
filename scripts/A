@@ -1,0 +1,299 @@
+/**
+ * URBALUX AI — Auto-Mantenimiento
+ * Se ejecuta via GitHub Actions cada 6 horas
+ * Corrige errores, mejora diseño, busca nuevas funciones
+ */
+
+import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { writeFile } from 'fs/promises';
+
+const OPENROUTER_KEY = process.env.OPENROUTER_KEY;
+const GROQ_KEY       = process.env.GROQ_KEY;
+const WEB_FILE       = process.env.WEB_FILE || 'urbalux.html';
+
+// ── Colores para el log ──
+const c = {
+  ok:   '\x1b[32m✅\x1b[0m',
+  warn: '\x1b[33m⚠️\x1b[0m',
+  err:  '\x1b[31m❌\x1b[0m',
+  info: '\x1b[36mℹ️\x1b[0m',
+  ai:   '\x1b[35m🤖\x1b[0m',
+};
+
+function log(icon, msg) {
+  console.log(`${icon}  ${msg}`);
+}
+
+// ── Llamada a OpenRouter ──
+async function callOpenRouter(model, systemPrompt, userPrompt, maxTokens = 3000) {
+  const { default: fetch } = await import('node-fetch');
+  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${OPENROUTER_KEY}`,
+      'HTTP-Referer': 'https://calitosaa.github.io',
+      'X-Title': 'URBALUX Auto-Maintain',
+    },
+    body: JSON.stringify({
+      model,
+      max_tokens: maxTokens,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user',   content: userPrompt },
+      ],
+    }),
+  });
+  if (!res.ok) throw new Error(`OpenRouter ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  return data.choices?.[0]?.message?.content || '';
+}
+
+// ── Llamada a Groq (gratis, ultra-rápido) ──
+async function callGroq(userPrompt, maxTokens = 2000) {
+  const { default: fetch } = await import('node-fetch');
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${GROQ_KEY}`,
+    },
+    body: JSON.stringify({
+      model: 'llama-3.3-70b-versatile',
+      max_tokens: maxTokens,
+      messages: [{ role: 'user', content: userPrompt }],
+    }),
+  });
+  if (!res.ok) throw new Error(`Groq ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  return data.choices?.[0]?.message?.content || '';
+}
+
+// ── Parsear JSON de respuesta IA ──
+function parseAI(text) {
+  try {
+    const clean = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+    // Buscar primer { ... } válido
+    const match = clean.match(/\{[\s\S]*\}/);
+    if (match) return JSON.parse(match[0]);
+  } catch (_) {}
+  return null;
+}
+
+// ── Pre-análisis local (sin IA) ──
+function preAnalizar(html) {
+  const issues = [];
+
+  // Doble coma
+  const doubleComa = (html.match(/,\s*,/g) || []).length;
+  if (doubleComa > 0) issues.push(`Doble coma detectada: ${doubleComa} ocurrencias`);
+
+  // font-variation-settings sin comillas
+  const fvsBad = (html.match(/font-variation-settings:\s*[^"'][^;]*;/g) || []).length;
+  if (fvsBad > 0) issues.push(`font-variation-settings sin escapar: ${fvsBad}`);
+
+  // Herramientas Studio
+  const tools = (html.match(/toolId:\s*['"][^'"]+['"]/g) || []).length;
+  const lines  = html.split('\n').length;
+  const sizeKB = (html.length / 1024).toFixed(1);
+
+  return { issues, tools, lines, sizeKB };
+}
+
+// ─────────────────────────────────────────────────
+//  MAIN
+// ─────────────────────────────────────────────────
+async function main() {
+  log(c.info, `Iniciando ciclo URBALUX Auto-Maintain — ${new Date().toLocaleString('es-ES')}`);
+
+  // 1. Leer archivo HTML
+  if (!existsSync(WEB_FILE)) {
+    log(c.err, `No se encontró ${WEB_FILE} en el repo`);
+    process.exit(1);
+  }
+  let html = readFileSync(WEB_FILE, 'utf-8');
+  log(c.ok, `Archivo cargado: ${WEB_FILE} (${(html.length/1024).toFixed(1)} KB)`);
+
+  // 2. Pre-análisis local
+  const pre = preAnalizar(html);
+  log(c.info, `Estadísticas: ${pre.lines} líneas, ${pre.sizeKB} KB, ${pre.tools} herramientas Studio`);
+  if (pre.issues.length > 0) {
+    pre.issues.forEach(i => log(c.warn, i));
+  } else {
+    log(c.ok, 'Sin errores comunes detectados localmente');
+  }
+
+  const htmlSample = html.slice(0, 6000) + '\n...\n' + html.slice(-1500);
+  const cssMatch   = html.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
+  const cssSample  = cssMatch ? cssMatch[1].slice(0, 2000) : '';
+  const jsMatch    = html.match(/<script[^>]*>([\s\S]*?)<\/script>/i);
+  const jsSample   = jsMatch  ? jsMatch[1].slice(0, 3000)  : '';
+
+  // 3. Lanzar 3 agentes IA en paralelo
+  log(c.ai, 'Lanzando 3 agentes IA en paralelo...');
+
+  const [erroresRaw, disenoRaw, funcionesRaw] = await Promise.allSettled([
+
+    // Agente 1: Claude 3.7 — detector de errores
+    callOpenRouter(
+      'anthropic/claude-3.7-sonnet',
+      'Eres auditor de código para URBALUX AI (~12000 líneas HTML). Detecta errores JS críticos. Responde SOLO en JSON sin markdown.',
+      `Analiza este JS de URBALUX AI y detecta errores.\n\nProblemas detectados localmente:\n${pre.issues.join('\n') || 'Ninguno'}\n\nJS (muestra):\n${jsSample}\n\nJSON esperado:\n{"errores_criticos":[{"linea":N,"descripcion":"...","buscar":"texto exacto","reemplazar":"texto corregido"}],"errores_menores":[{"descripcion":"...","fix":"..."}],"puntuacion":0-100,"resumen":"...","accion_inmediata":true/false}`,
+      2500
+    ),
+
+    // Agente 2: Llama 3.3 (Groq gratis) — diseño
+    callGroq(
+      `Eres experto en Material Design 3 y UX moderno. Analiza este CSS/HTML de URBALUX AI e inspírate en el diseño Nexus Forge (glassmorphism, dark theme, neón accents: https://preview-a77d3c78--nexus-forge-dream.lovable.app).\n\nCSS actual:\n${cssSample}\n\nHTML (muestra):\n${htmlSample.slice(0, 2000)}\n\nResponde SOLO en JSON:\n{"mejoras":[{"componente":"...","css":"código CSS completo...","prioridad":"alta/media"}],"paleta":{"primary":"#...","accent":"#..."},"resumen":"..."}`,
+      2000
+    ),
+
+    // Agente 3: DeepSeek R1 — nuevas funciones
+    callOpenRouter(
+      'deepseek/deepseek-r1',
+      'Eres investigador de tendencias IA 2025. Sugiere mejoras para una app web de IA all-in-one. Responde SOLO en JSON sin markdown.',
+      `URBALUX AI tiene ${pre.tools} herramientas de IA (chat, imagen, código, música, 3D, etc.) y usa OpenRouter, Groq, Gemini, Cerebras, Pollinations.\n\nSugiere para 2025:\n1. Nuevas APIs de IA gratuitas no integradas\n2. Nuevas herramientas Studio que faltan\n3. Mejoras de rendimiento\n\nJSON esperado:\n{"nuevas_apis":[{"nombre":"...","url":"...","gratis":true,"descripcion":"..."}],"nuevas_herramientas":[{"nombre":"...","descripcion":"...","codigo_ejemplo":"..."}],"mejoras_motor":["..."]}`,
+      2500
+    ),
+  ]);
+
+  // 4. Parsear respuestas
+  const errores  = erroresRaw.status  === 'fulfilled' ? parseAI(erroresRaw.value)  : null;
+  const diseno   = disenoRaw.status   === 'fulfilled' ? parseAI(disenoRaw.value)   : null;
+  const funciones = funcionesRaw.status === 'fulfilled' ? parseAI(funcionesRaw.value) : null;
+
+  log(c.ai, `Errores detectados por Claude: ${errores?.errores_criticos?.length ?? 'error al parsear'}`);
+  log(c.ai, `Mejoras de diseño (Groq):      ${diseno?.mejoras?.length ?? 'error al parsear'}`);
+  log(c.ai, `Nuevas herramientas (DeepSeek): ${funciones?.nuevas_herramientas?.length ?? 'error al parsear'}`);
+
+  // 5. Decidir si hay que actuar
+  const hayErrores  = errores?.accion_inmediata || (errores?.errores_criticos?.length > 0);
+  const hayDiseno   = diseno?.mejoras?.some(m => m.prioridad === 'alta');
+  const hayFunciones = funciones?.nuevas_herramientas?.length > 0;
+  const puntuacion  = errores?.puntuacion ?? 100;
+  const necesitaCambios = hayErrores || hayDiseno || puntuacion < 80;
+
+  if (!necesitaCambios) {
+    log(c.ok, `Código en estado óptimo (${puntuacion}/100). Sin cambios necesarios.`);
+    await writeFile('/tmp/changelog.txt', 'código en estado óptimo, sin cambios');
+    process.exit(0);
+  }
+
+  log(c.info, `Cambios necesarios — puntuación: ${puntuacion}/100. Generando código...`);
+
+  // 6. Claude genera el código de los fixes
+  const fixPrompt = `Aplica estas correcciones y mejoras a URBALUX AI (urbalux.html).
+
+ERRORES A CORREGIR:
+${JSON.stringify(errores?.errores_criticos || [], null, 2)}
+
+MEJORAS DE DISEÑO (alta prioridad):
+${JSON.stringify((diseno?.mejoras || []).filter(m => m.prioridad === 'alta').slice(0, 3), null, 2)}
+
+NUEVAS HERRAMIENTAS (top 2):
+${JSON.stringify((funciones?.nuevas_herramientas || []).slice(0, 2), null, 2)}
+
+MUESTRA DEL ARCHIVO ACTUAL:
+${htmlSample.slice(0, 5000)}
+
+REGLAS:
+- Mantener estructura Material Design 3 dark
+- Preservar colores: --md-primary: #BB86FC, --md-secondary: #03DAC6
+- Solo cambiar lo necesario
+- Si añades CSS, insertar antes de </style>
+- Si añades herramientas, buscar <!-- END STUDIO TOOLS --> e insertar antes
+
+Responde SOLO con este JSON (sin markdown):
+{
+  "fixes": [
+    {
+      "descripcion": "...",
+      "buscar": "texto exacto a buscar en el HTML",
+      "reemplazar": "texto de reemplazo"
+    }
+  ],
+  "css_nuevo": "CSS adicional o vacío",
+  "html_nuevo": "HTML de nuevas herramientas o vacío",
+  "changelog": "resumen en una línea"
+}`;
+
+  let fixes = null;
+  try {
+    const fixRaw = await callOpenRouter('anthropic/claude-3.7-sonnet', 'Eres generador de código preciso para URBALUX AI. Responde SOLO en JSON válido sin markdown.', fixPrompt, 4000);
+    fixes = parseAI(fixRaw);
+    log(c.ai, `Código generado: ${fixes?.fixes?.length ?? 0} fixes`);
+  } catch (e) {
+    log(c.err, `Error generando código: ${e.message}`);
+  }
+
+  if (!fixes) {
+    log(c.warn, 'No se pudo generar código de fixes. Abortando sin cambios.');
+    process.exit(0);
+  }
+
+  // 7. Aplicar cambios al HTML
+  let htmlModificado = html;
+  let aplicados = 0;
+  const changelog = [];
+
+  // Search-replace fixes
+  for (const fix of (fixes.fixes || [])) {
+    if (fix.buscar && fix.reemplazar && htmlModificado.includes(fix.buscar)) {
+      htmlModificado = htmlModificado.replace(fix.buscar, fix.reemplazar);
+      changelog.push(`✅ ${fix.descripcion}`);
+      aplicados++;
+    } else if (fix.buscar) {
+      log(c.warn, `Skip (no encontrado): ${fix.descripcion}`);
+    }
+  }
+
+  // CSS nuevo
+  if (fixes.css_nuevo?.trim()) {
+    const marker = '/* END URBALUX CUSTOM CSS */';
+    if (htmlModificado.includes(marker)) {
+      htmlModificado = htmlModificado.replace(marker, fixes.css_nuevo + '\n' + marker);
+    } else {
+      htmlModificado = htmlModificado.replace('</style>', fixes.css_nuevo + '\n</style>');
+    }
+    changelog.push('🎨 CSS adicional insertado');
+    aplicados++;
+  }
+
+  // HTML de nuevas herramientas
+  if (fixes.html_nuevo?.trim()) {
+    const marker = '<!-- END STUDIO TOOLS -->';
+    if (htmlModificado.includes(marker)) {
+      htmlModificado = htmlModificado.replace(marker, fixes.html_nuevo + '\n' + marker);
+      changelog.push('🔧 Nuevas herramientas añadidas al Studio');
+      aplicados++;
+    }
+  }
+
+  if (aplicados === 0) {
+    log(c.warn, 'No se aplicaron cambios (textos no encontrados en el HTML).');
+    await writeFile('/tmp/changelog.txt', 'análisis completado sin cambios aplicables');
+    process.exit(0);
+  }
+
+  // 8. Guardar archivo
+  writeFileSync(WEB_FILE, htmlModificado, 'utf-8');
+  log(c.ok, `Archivo guardado: ${aplicados} cambios aplicados`);
+
+  // 9. Guardar changelog para el commit
+  const changelogText = fixes.changelog || changelog.join(', ');
+  await writeFile('/tmp/changelog.txt', changelogText);
+
+  // 10. Resumen final
+  console.log('\n╔══════════════════════════════════════╗');
+  console.log('║  URBALUX AI — CICLO COMPLETADO        ║');
+  console.log('╚══════════════════════════════════════╝');
+  changelog.forEach(c => console.log(' ' + c));
+  console.log(`\n📊 Puntuación código: ${puntuacion}/100`);
+  console.log(`📦 Cambios aplicados: ${aplicados}`);
+  console.log(`⏰ ${new Date().toLocaleString('es-ES')}`);
+}
+
+main().catch(e => {
+  console.error('❌ Error fatal:', e);
+  process.exit(1);
+});
