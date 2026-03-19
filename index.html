@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,interactive-widget=resizes-content">
-<meta name="description" content="URBALUX AI v20.0 — Hub IA Universal. 400+ sectores, MD3, Multi-API Engine.">
-<title>URBALUX AI v20 — Hub IA Universal</title>
+<meta name="description" content="URBALUX AI — Chat IA, School (SurfSense), 35+ Open Source AIs, Automatización y Deploy.">
+<title>URBALUX AI — Hub IA + Open Source + School</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Google+Sans+Display:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -736,9 +736,8 @@ body{
     <div class="nav-logo" title="URBALUX AI">U</div>
     <a class="md-nav-rail-item active" data-nav="home" href="#" onclick="ev(event,'home')"><div class="md-nav-ind"><span class="material-symbols-rounded">home</span></div><span class="md-nav-label">Inicio</span></a>
     <a class="md-nav-rail-item" data-nav="chat" href="#" onclick="ev(event,'chat')"><div class="md-nav-ind"><span class="material-symbols-rounded">chat_bubble</span></div><span class="md-nav-label">Chat</span></a>
-    <a class="md-nav-rail-item" data-nav="sectors" href="#" onclick="ev(event,'sectors')"><div class="md-nav-ind"><span class="material-symbols-rounded">grid_view</span></div><span class="md-nav-label">Asistentes</span></a>
-    <a class="md-nav-rail-item" data-nav="studio" href="#" onclick="ev(event,'studio')"><div class="md-nav-ind"><span class="material-symbols-rounded">auto_fix_high</span></div><span class="md-nav-label">Studio</span></a>
-    <a class="md-nav-rail-item" data-nav="aihub" href="#" onclick="ev(event,'aihub')"><div class="md-nav-ind"><span class="material-symbols-rounded">neurology</span></div><span class="md-nav-label">IA Hub</span></a>
+    <a class="md-nav-rail-item" data-nav="school" href="#" onclick="ev(event,'school')"><div class="md-nav-ind"><span class="material-symbols-rounded">school</span></div><span class="md-nav-label">School</span></a>
+    <a class="md-nav-rail-item" data-nav="aihub" href="#" onclick="ev(event,'aihub')"><div class="md-nav-ind"><span class="material-symbols-rounded">hub</span></div><span class="md-nav-label">Open Source</span></a>
     <a class="md-nav-rail-item" data-nav="community" href="#" onclick="ev(event,'community')"><div class="md-nav-ind"><span class="material-symbols-rounded">group</span></div><span class="md-nav-label">Comunidad</span></a>
     <hr class="md-divider" style="width:40px;margin:8px auto">
     <a class="md-nav-rail-item" data-nav="docs" href="#" onclick="ev(event,'docs')"><div class="md-nav-ind"><span class="material-symbols-rounded">book_2</span></div><span class="md-nav-label">Docs</span></a>
@@ -764,9 +763,8 @@ body{
   <div class="md-bottom-items">
     <a class="md-bottom-item active" data-nav="home" href="#" onclick="ev(event,'home')"><div class="md-bottom-ind"><span class="material-symbols-rounded">home</span></div><span class="md-bottom-label">Inicio</span></a>
     <a class="md-bottom-item" data-nav="chat" href="#" onclick="ev(event,'chat')"><div class="md-bottom-ind"><span class="material-symbols-rounded">chat_bubble</span></div><span class="md-bottom-label">Chat</span></a>
-    <a class="md-bottom-item" data-nav="sectors" href="#" onclick="ev(event,'sectors')"><div class="md-bottom-ind"><span class="material-symbols-rounded">grid_view</span></div><span class="md-bottom-label">Asistentes</span></a>
-    <a class="md-bottom-item" data-nav="studio" href="#" onclick="ev(event,'studio')"><div class="md-bottom-ind"><span class="material-symbols-rounded">auto_fix_high</span></div><span class="md-bottom-label">Studio</span></a>
-    <a class="md-bottom-item" data-nav="aihub" href="#" onclick="ev(event,'aihub')"><div class="md-bottom-ind"><span class="material-symbols-rounded">neurology</span></div><span class="md-bottom-label">IA Hub</span></a>
+    <a class="md-bottom-item" data-nav="school" href="#" onclick="ev(event,'school')"><div class="md-bottom-ind"><span class="material-symbols-rounded">school</span></div><span class="md-bottom-label">School</span></a>
+    <a class="md-bottom-item" data-nav="aihub" href="#" onclick="ev(event,'aihub')"><div class="md-bottom-ind"><span class="material-symbols-rounded">hub</span></div><span class="md-bottom-label">Open Source</span></a>
     <a class="md-bottom-item" data-nav="account" href="#" onclick="ev(event,'account')"><div class="md-bottom-ind"><span class="material-symbols-rounded">account_circle</span></div><span class="md-bottom-label">Cuenta</span></a>
     <a class="md-bottom-item" data-nav="community" href="#" onclick="ev(event,'community')"><div class="md-bottom-ind"><span class="material-symbols-rounded">group</span></div><span class="md-bottom-label">Comunidad</span></a>
   </div>
@@ -11755,7 +11753,7 @@ const features=[
   {icon:'image',color:'#7627BB',bg:'#7627BB20',title:'Imágenes con IA',desc:'Flux 1.1 Pro, GPT Image, Kontext. Texto a imagen en segundos, sin cuenta.'},
   {icon:'record_voice_over',color:'#E91E63',bg:'#E91E6320',title:'Voces IA reales',desc:'6 voces OpenAI (nova, shimmer, onyx...) por Pollinations TTS. 0€, sin límite.'},
   {icon:'visibility',color:'#0F9D58',bg:'#0F9D5820',title:'Visión GPT-4o',desc:'Sube una imagen y la IA la analiza, lee texto, responde preguntas sobre ella.'},
-  {icon:'auto_awesome',color:'#FBBC04',bg:'#FBBC0420',title:'Studio 14 tools',desc:'Presentaciones, flashcards, kahoot, podcasts, exámenes, planes de estudio...'},
+  {icon:'school',color:'#FBBC04',bg:'#FBBC0420',title:'School + Open Source',desc:'SurfSense-style notebooks, 35+ IAs open source: Llama, DeepSeek, Flux, n8n...'},
   {icon:'mic',color:'#FF5722',bg:'#FF572220',title:'Voz a texto',desc:'Habla directamente al chat. STT nativo del navegador, sin instalación.'},
   {icon:'smart_toy',color:'#00ACC1',bg:'#00ACC120',title:'25+ modelos IA',desc:'GPT-4o, Claude 3.7, Gemini 2.5, DeepSeek R1, Llama 3.3, Mistral... todos gratis.'},
   {icon:'picture_as_pdf',color:'#EA4335',bg:'#EA433520',title:'Exportar a PDF',desc:'Cualquier resultado del Studio se puede exportar a PDF con un clic.'},
@@ -11783,7 +11781,7 @@ el.innerHTML=`
     </h1>
     <p style="font-size:17px;color:var(--md-on-surface-variant);max-width:560px;margin:0 auto 32px;line-height:1.65">
       Chat con los mejores modelos, generación de imágenes, voz IA real, búsqueda web en tiempo real,
-      visión y 14 herramientas de Studio. <strong style="color:var(--md-on-surface)">Sin cuenta. Sin tarjeta. Gratis para siempre.</strong>
+      School (NotebookLM open source) y 35+ IAs open source. <strong style="color:var(--md-on-surface)">Sin cuenta. Sin tarjeta. Gratis para siempre.</strong>
     </p>
 
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:48px">
@@ -11791,15 +11789,15 @@ el.innerHTML=`
         <span class="material-symbols-rounded">chat</span>
         Empezar gratis
       </button>
-      <button class="md-button md-button-outlined" style="padding:16px 28px;font-size:15px;gap:8px;border-radius:100px" onclick="loadTab('studio')">
-        <span class="material-symbols-rounded">auto_awesome</span>
-        Ver Studio
+      <button class="md-button md-button-outlined" style="padding:16px 28px;font-size:15px;gap:8px;border-radius:100px" onclick="loadTab('school')">
+        <span class="material-symbols-rounded">school</span>
+        School IA
       </button>
     </div>
 
     <!-- Stats -->
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:600px;margin:0 auto">
-      ${[{v:D.sectors.length+'+',l:'Sectores',icon:'grid_view'},{v:'25+',l:'Modelos IA',icon:'smart_toy'},{v:'14',l:'Herramientas',icon:'auto_awesome'},{v:'0€',l:'Para siempre',icon:'volunteer_activism'}].map((s,i)=>`
+      ${[{v:D.sectors.length+'+',l:'Sectores',icon:'grid_view'},{v:'25+',l:'Modelos IA',icon:'smart_toy'},{v:'35+',l:'IAs Open Source',icon:'hub'},{v:'0€',l:'Para siempre',icon:'volunteer_activism'}].map((s,i)=>`
         <div class="hero-stat md-card" style="padding:16px 10px;text-align:center;border-radius:16px">
           <div style="font-family:var(--md-font-display);font-size:26px;font-weight:800;color:var(--md-primary);line-height:1">${s.v}</div>
           <div style="font-size:11px;color:var(--md-on-surface-variant);margin-top:4px;font-weight:600">${s.l}</div>
@@ -11890,7 +11888,7 @@ const Docs={render(){const el=document.getElementById('main-content');el.innerHT
 
   <!-- Quick links -->
   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px">
-    ${['Motor IA','Chat','Studio','TTS','Visión','Búsqueda web','API'].map(s=>`<button class="md-chip" onclick="this.closest('.page-enter').querySelector('[data-section=\'${s}\']')?.scrollIntoView({behavior:'smooth',block:'start'})">${s}</button>`).join('')}
+    ${['Motor IA','Chat','School','Open Source','TTS','Visión','Búsqueda web','API'].map(s=>`<button class="md-chip" onclick="this.closest('.page-enter').querySelector('[data-section=\'${s}\']')?.scrollIntoView({behavior:'smooth',block:'start'})">${s}</button>`).join('')}
   </div>
 
   ${[
@@ -12166,7 +12164,7 @@ setTimeout(()=>{
 // Update mobile nav
 document.querySelectorAll('.mobile-nav-btn').forEach(b=>b.classList.remove('active'));
 const mobBtn=document.getElementById('mob-'+tab);if(mobBtn) mobBtn.classList.add('active');
-switch(tab){case 'home':Home.render();break;case 'chat':Chat.render();break;case 'sectors':Sectors.render();break;case 'studio':Studio.render();break;case 'community':Community.render();break;case 'docs':Docs.render();break;case 'aihub':AIHub.render();break;case 'account':Auth.renderAccount();break;default:Home.render();}
+switch(tab){case 'home':Home.render();break;case 'chat':Chat.render();break;case 'school':School.render();break;case 'community':Community.render();break;case 'docs':Docs.render();break;case 'aihub':AIHub.render();break;case 'account':Auth.renderAccount();break;default:Home.render();}
 content.style.transition='opacity .2s,transform .2s';content.style.opacity='1';content.style.transform='translateY(0)';
 history.pushState({tab},'','#'+tab);},80);}
 window.addEventListener('popstate',e=>{if(e.state?.tab) loadTab(e.state.tab,true);});
@@ -12259,251 +12257,1148 @@ renderAccount(){
 
 // ═══════════════════════════════════════════════════════════════════════
 // AI HUB MODULE — 16 Plataformas IA con funciones nativas y funcionales
-// Claude · Gamma · Genspark · Manus · Gemini · ChatGPT · DeepSeek
-// Perplexity · Nano Banana Pro · Sora · Copilot · Android Studio
-// Grok · Knowunity · Astra AI · Suno
+
+// ═══════════════════════════════════════════════════════════════════════
+//  SCHOOL — SurfSense Style · NotebookLM Design · Knowledge Hub
+// ═══════════════════════════════════════════════════════════════════════
+const School = {
+  _notebooks: [],
+  _active: null,
+  _sources: [],
+  _notes: [],
+  _chat: [],
+  _chatting: false,
+
+  init() {
+    try { this._notebooks = JSON.parse(localStorage.getItem('school-notebooks-v2') || '[]'); } catch(e) {}
+    if (!this._notebooks.length) {
+      this._notebooks = [
+        { id: 'nb1', title: 'Introducción a la IA', emoji: '🤖', color: '#1A73E8', created: Date.now() - 86400000*3, sources: ['Artículo: "What is Machine Learning" - Google AI Blog', 'Video: "The History of Artificial Intelligence"', 'PDF: Introduction_to_Neural_Networks.pdf'], notes: 2, chats: 5 },
+        { id: 'nb2', title: 'Historia Universal', emoji: '🏛️', color: '#0F9D58', created: Date.now() - 86400000, sources: ['Libro: "Sapiens" - Yuval Noah Harari', 'Web: Wikipedia - Segunda Guerra Mundial', 'Podcast: "Revolutions" - Mike Duncan'], notes: 4, chats: 12 },
+        { id: 'nb3', title: 'Cálculo Diferencial', emoji: '📐', color: '#7C3AED', created: Date.now() - 3600000, sources: ['PDF: Calculus_Stewart_8th_Edition.pdf', 'YouTube: "3Blue1Brown - Essence of Calculus"'], notes: 1, chats: 3 }
+      ];
+      this.save();
+    }
+  },
+
+  save() {
+    try { localStorage.setItem('school-notebooks-v2', JSON.stringify(this._notebooks)); } catch(e) {}
+  },
+
+  render() {
+    this.init();
+    const el = document.getElementById('main-content');
+    el.innerHTML = `
+<div class="school-app page-enter" style="min-height:100vh;background:var(--md-background)">
+
+  <!-- NotebookLM-style header -->
+  <div style="background:var(--md-surface-container-low);border-bottom:1px solid var(--md-outline-variant);padding:0 24px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:16px;height:64px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1A73E8,#0F9D58);display:flex;align-items:center;justify-content:center">
+          <span class="material-symbols-rounded" style="color:white;font-size:18px">auto_stories</span>
+        </div>
+        <span style="font-family:var(--md-font-display);font-size:18px;font-weight:700">School</span>
+        <span style="font-size:11px;padding:2px 8px;border-radius:100px;background:var(--md-primary-container);color:var(--md-primary);font-weight:700">by SurfSense</span>
+      </div>
+      <div style="flex:1"></div>
+      <button onclick="School.newNotebook()" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:100px;background:var(--md-primary);color:white;border:none;cursor:pointer;font-size:13px;font-weight:700">
+        <span class="material-symbols-rounded" style="font-size:16px">add</span>
+        Nuevo Notebook
+      </button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div style="max-width:1200px;margin:0 auto;padding:32px 24px 100px">
+
+    <!-- Welcome banner -->
+    <div style="background:linear-gradient(135deg,#0f172a,#1e3a5f,#1a1a2e);border-radius:20px;padding:32px;margin-bottom:32px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:-30px;right:-30px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#1A73E820,transparent);pointer-events:none"></div>
+      <div style="position:absolute;bottom:-40px;left:40%;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,#0F9D5820,transparent);pointer-events:none"></div>
+      <div style="position:relative">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <span style="width:8px;height:8px;border-radius:50%;background:#4ADE80;display:inline-block"></span>
+          <span style="font-size:11px;color:rgba(255,255,255,.6);font-weight:700;letter-spacing:1px;text-transform:uppercase">Tu Centro de Conocimiento IA · Open Source</span>
+        </div>
+        <h2 style="font-family:var(--md-font-display);font-size:28px;font-weight:800;color:white;margin-bottom:10px;line-height:1.2">
+          Aprende más rápido con IA.<br>
+          <span style="background:linear-gradient(90deg,#60A5FA,#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Como NotebookLM pero Open Source.</span>
+        </h2>
+        <p style="font-size:14px;color:rgba(255,255,255,.65);max-width:600px;line-height:1.7;margin-bottom:20px">
+          Sube documentos, añade URLs, YouTube, PDFs y chatea con tu conocimiento. Genera podcasts, mapas mentales, flashcards y resúmenes automáticos. Powered by SurfSense architecture.
+        </p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          ${[{i:'description',l:'50+ formatos'},{i:'travel_explore',l:'Búsqueda web'},{i:'podcasts',l:'Podcasts IA'},{i:'account_tree',l:'Mapas mentales'},{i:'style',l:'Flashcards'},{i:'lock_open',l:'100% Open Source'}].map(f=>`
+          <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.08);padding:5px 12px;border-radius:100px;border:1px solid rgba(255,255,255,.1)">
+            <span class="material-symbols-rounded" style="font-size:14px;color:rgba(255,255,255,.7)">${f.i}</span>
+            <span style="font-size:11px;color:rgba(255,255,255,.7);font-weight:600">${f.l}</span>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Notebooks -->
+    <div style="margin-bottom:24px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <h3 style="font-size:16px;font-weight:700;color:var(--md-on-surface)">Mis Notebooks</h3>
+        <span style="font-size:12px;color:var(--md-on-surface-variant)">${this._notebooks.length} notebooks</span>
+      </div>
+
+      <!-- Notebooks grid -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px" id="notebooks-grid">
+        ${this._notebooks.map(nb => this._notebookCard(nb)).join('')}
+
+        <!-- Create new card -->
+        <div onclick="School.newNotebook()" style="border:2px dashed var(--md-outline-variant);border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;min-height:180px"
+          onmouseover="this.style.borderColor='var(--md-primary)';this.style.background='var(--md-primary-container)'"
+          onmouseout="this.style.borderColor='var(--md-outline-variant)';this.style.background='transparent'">
+          <div style="width:48px;height:48px;border-radius:14px;background:var(--md-surface-container);display:flex;align-items:center;justify-content:center;margin-bottom:12px">
+            <span class="material-symbols-rounded" style="font-size:24px;color:var(--md-primary)">add</span>
+          </div>
+          <div style="font-size:14px;font-weight:700;color:var(--md-on-surface)">Nuevo Notebook</div>
+          <div style="font-size:12px;color:var(--md-on-surface-variant);margin-top:4px;text-align:center">Añade fuentes y chatea con tu conocimiento</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features section -->
+    <div style="margin-top:40px">
+      <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:var(--md-on-surface)">¿Qué puedes hacer con School?</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px">
+        ${[
+          {icon:'upload_file',color:'#1A73E8',title:'Sube cualquier fuente',desc:'PDFs, Word, PowerPoint, YouTube, URLs, notas, Notion, Slack, GitHub, Linear'},
+          {icon:'chat',color:'#0F9D58',title:'Chat con tus fuentes',desc:'Haz preguntas a tus documentos. La IA responde con citas y referencias exactas'},
+          {icon:'podcasts',color:'#7C3AED',title:'Genera podcasts IA',desc:'Convierte tu notebook en un podcast de 2 personas en menos de 20 segundos'},
+          {icon:'account_tree',color:'#E91E63',title:'Mapas mentales',desc:'Visualización automática de conexiones entre conceptos clave'},
+          {icon:'style',color:'#F59E0B',title:'Flashcards automáticas',desc:'Sistema de repaso espaciado generado desde tus fuentes'},
+          {icon:'travel_explore',color:'#20B2AA',title:'Búsqueda conectada',desc:'Conecta Tavily, Linkup, Brave Search para investigar en tiempo real'},
+          {icon:'timeline',color:'#DC2626',title:'Líneas del tiempo',desc:'Cronologías visuales extraídas automáticamente de tus fuentes'},
+          {icon:'share',color:'#0891B2',title:'Compartir público',desc:'Comparte tu notebook con un link público y colabora en equipo'}
+        ].map(f=>`
+          <div class="md-card" style="padding:16px;border-radius:16px;border:1px solid var(--md-outline-variant)">
+            <div style="width:36px;height:36px;border-radius:10px;background:${f.color}15;display:flex;align-items:center;justify-content:center;margin-bottom:10px">
+              <span class="material-symbols-rounded" style="color:${f.color};font-size:18px">${f.icon}</span>
+            </div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:5px">${f.title}</div>
+            <div style="font-size:12px;color:var(--md-on-surface-variant);line-height:1.5">${f.desc}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+
+    <!-- Source types -->
+    <div style="margin-top:32px;background:var(--md-surface-container);border-radius:16px;padding:20px">
+      <h4 style="font-size:13px;font-weight:700;color:var(--md-on-surface-variant);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">Fuentes compatibles</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        ${['📄 PDF','📝 DOCX','📊 PPTX','🎥 YouTube','🌐 Web URL','📰 Artículos','💬 Slack','📋 Notion','🐙 GitHub','📈 Linear','🎙️ Audio','📷 Imágenes','📧 Email','🗒️ Markdown','📱 Twitter/X','🔗 RSS Feed'].map(s=>`
+          <span style="font-size:12px;padding:5px 12px;border-radius:8px;background:var(--md-surface-container-high);color:var(--md-on-surface);border:1px solid var(--md-outline-variant)">${s}</span>`).join('')}
+      </div>
+    </div>
+
+  </div>
+</div>`;
+
+    setTimeout(() => {
+      document.querySelectorAll('.nb-card').forEach((c, i) =>
+        setTimeout(() => c.style.opacity = '1', i * 60));
+    }, 60);
+  },
+
+  _notebookCard(nb) {
+    const timeAgo = (ts) => {
+      const d = Date.now() - ts;
+      if (d < 3600000) return Math.floor(d/60000) + 'm';
+      if (d < 86400000) return Math.floor(d/3600000) + 'h';
+      return Math.floor(d/86400000) + 'd';
+    };
+    return `<div class="nb-card md-card" onclick="School.openNotebook('${nb.id}')"
+      style="border-radius:20px;padding:22px;cursor:pointer;opacity:0;transition:all .2s;border:1px solid var(--md-outline-variant);position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:${nb.color}"></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+        <div style="width:44px;height:44px;border-radius:12px;background:${nb.color}18;border:1px solid ${nb.color}30;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">${nb.emoji}</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:15px;font-weight:700;color:var(--md-on-surface);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${nb.title}</div>
+          <div style="font-size:11px;color:var(--md-on-surface-variant)">Editado hace ${timeAgo(nb.created)}</div>
+        </div>
+      </div>
+      <div style="margin-bottom:14px">
+        ${(nb.sources || []).slice(0, 2).map(s => `
+          <div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--md-outline-variant)">
+            <span class="material-symbols-rounded" style="font-size:14px;color:var(--md-on-surface-variant)">description</span>
+            <span style="font-size:11px;color:var(--md-on-surface-variant);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${s}</span>
+          </div>`).join('')}
+        ${(nb.sources || []).length > 2 ? `<div style="font-size:11px;color:var(--md-primary);margin-top:5px;font-weight:600">+${nb.sources.length - 2} fuentes más</div>` : ''}
+      </div>
+      <div style="display:flex;gap:12px;font-size:11px;color:var(--md-on-surface-variant)">
+        <span style="display:flex;align-items:center;gap:3px"><span class="material-symbols-rounded" style="font-size:14px">description</span>${(nb.sources||[]).length} fuentes</span>
+        <span style="display:flex;align-items:center;gap:3px"><span class="material-symbols-rounded" style="font-size:14px">chat</span>${nb.chats || 0} chats</span>
+        <span style="display:flex;align-items:center;gap:3px"><span class="material-symbols-rounded" style="font-size:14px">sticky_note_2</span>${nb.notes || 0} notas</span>
+      </div>
+    </div>`;
+  },
+
+  newNotebook() {
+    const name = prompt('Nombre del notebook:', 'Mi Notebook');
+    if (!name) return;
+    const emojis = ['📚','🔬','🎨','💻','🌍','🧪','🏛️','🎵','💡','🚀','🌱','⚗️'];
+    const colors = ['#1A73E8','#0F9D58','#7C3AED','#E91E63','#F59E0B','#0891B2','#DC2626','#16A34A'];
+    const nb = {
+      id: 'nb' + Date.now(),
+      title: name,
+      emoji: emojis[Math.floor(Math.random() * emojis.length)],
+      color: colors[Math.floor(Math.random() * colors.length)],
+      created: Date.now(),
+      sources: [],
+      notes: 0,
+      chats: 0
+    };
+    this._notebooks.unshift(nb);
+    this.save();
+    this.openNotebook(nb.id);
+  },
+
+  openNotebook(id) {
+    const nb = this._notebooks.find(x => x.id === id);
+    if (!nb) return;
+    this._active = nb;
+    this._chat = [];
+    this._sources = [...(nb.sources || [])];
+    this._renderNotebook(nb);
+  },
+
+  _renderNotebook(nb) {
+    const el = document.getElementById('main-content');
+    el.innerHTML = `
+<div class="page-enter" style="display:flex;flex-direction:column;min-height:100vh;background:var(--md-background)">
+
+  <!-- Header -->
+  <div style="background:var(--md-surface-container-low);border-bottom:1px solid var(--md-outline-variant);padding:12px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0;position:sticky;top:0;z-index:10">
+    <button onclick="School.render()" style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;background:var(--md-surface-container);border:1px solid var(--md-outline-variant);cursor:pointer;color:var(--md-on-surface-variant);font-size:12px">
+      <span class="material-symbols-rounded" style="font-size:16px">arrow_back</span>School
+    </button>
+    <div style="display:flex;align-items:center;gap:8px;flex:1">
+      <span style="font-size:20px">${nb.emoji}</span>
+      <span style="font-size:16px;font-weight:700;color:var(--md-on-surface)">${nb.title}</span>
+      <span style="font-size:11px;padding:2px 8px;border-radius:100px;background:${nb.color}20;color:${nb.color};font-weight:600">${(nb.sources||[]).length} fuentes</span>
+    </div>
+    <div style="display:flex;gap:6px">
+      <button onclick="School._generatePodcast('${nb.id}')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:100px;background:var(--md-surface-container-high);border:1px solid var(--md-outline-variant);cursor:pointer;font-size:12px;font-weight:600;color:var(--md-on-surface)">
+        <span class="material-symbols-rounded" style="font-size:16px;color:#7C3AED">podcasts</span>Podcast
+      </button>
+      <button onclick="School._generateMindmap('${nb.id}')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:100px;background:var(--md-surface-container-high);border:1px solid var(--md-outline-variant);cursor:pointer;font-size:12px;font-weight:600;color:var(--md-on-surface)">
+        <span class="material-symbols-rounded" style="font-size:16px;color:#E91E63">account_tree</span>Mapa
+      </button>
+      <button onclick="School._generateFlashcards('${nb.id}')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:100px;background:var(--md-surface-container-high);border:1px solid var(--md-outline-variant);cursor:pointer;font-size:12px;font-weight:600;color:var(--md-on-surface)">
+        <span class="material-symbols-rounded" style="font-size:16px;color:#F59E0B">style</span>Flashcards
+      </button>
+    </div>
+  </div>
+
+  <!-- 3-column layout like NotebookLM -->
+  <div style="display:grid;grid-template-columns:260px 1fr 300px;flex:1;min-height:calc(100vh - 65px);max-height:calc(100vh - 65px);overflow:hidden" id="nb-layout">
+
+    <!-- LEFT: Sources -->
+    <div style="border-right:1px solid var(--md-outline-variant);overflow-y:auto;padding:16px;background:var(--md-surface-container-lowest);scrollbar-width:thin">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--md-on-surface-variant);text-transform:uppercase;margin-bottom:12px">Fuentes</div>
+
+      <button onclick="School._addSource('${nb.id}')" style="width:100%;display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;border:1.5px dashed var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-primary);font-size:13px;font-weight:600;margin-bottom:12px;transition:all .15s"
+        onmouseover="this.style.background='var(--md-primary-container)'" onmouseout="this.style.background='transparent'">
+        <span class="material-symbols-rounded" style="font-size:18px">add</span>
+        Añadir fuente
+      </button>
+
+      <div id="sources-list">
+        ${this._sources.map((s, i) => `
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 10px;border-radius:10px;background:var(--md-surface-container);margin-bottom:6px;border:1px solid var(--md-outline-variant);position:relative;group">
+            <span class="material-symbols-rounded" style="font-size:16px;color:var(--md-primary);flex-shrink:0;margin-top:1px">description</span>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:12px;font-weight:600;color:var(--md-on-surface);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${s}</div>
+            </div>
+            <button onclick="School._removeSource('${nb.id}',${i})" style="border:none;background:none;cursor:pointer;color:var(--md-on-surface-variant);padding:2px;border-radius:4px;flex-shrink:0" title="Eliminar">
+              <span class="material-symbols-rounded" style="font-size:14px">close</span>
+            </button>
+          </div>`).join('')}
+      </div>
+
+      ${this._sources.length === 0 ? `
+        <div style="text-align:center;padding:20px 12px;color:var(--md-on-surface-variant)">
+          <span class="material-symbols-rounded" style="font-size:36px;display:block;margin-bottom:8px;opacity:.4">upload_file</span>
+          <div style="font-size:12px;line-height:1.5">Añade PDFs, URLs, YouTube o notas para empezar</div>
+        </div>` : ''}
+
+      <!-- Source type chips -->
+      <div style="margin-top:16px">
+        <div style="font-size:10px;color:var(--md-on-surface-variant);margin-bottom:8px;font-weight:600">Tipos de fuente</div>
+        ${[
+          {icon:'upload_file',label:'Archivo',color:'#1A73E8'},
+          {icon:'link',label:'URL',color:'#0F9D58'},
+          {icon:'smart_display',label:'YouTube',color:'#DC2626'},
+          {icon:'edit_note',label:'Texto',color:'#7C3AED'},
+          {icon:'travel_explore',label:'Buscar web',color:'#F59E0B'}
+        ].map(t=>`
+          <button onclick="School._addSourceType('${nb.id}','${t.label}')" style="display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:8px;border:1px solid var(--md-outline-variant);background:var(--md-surface-container);cursor:pointer;font-size:11px;color:var(--md-on-surface);margin:2px">
+            <span class="material-symbols-rounded" style="font-size:14px;color:${t.color}">${t.icon}</span>${t.label}
+          </button>`).join('')}
+      </div>
+    </div>
+
+    <!-- CENTER: Chat -->
+    <div style="display:flex;flex-direction:column;overflow:hidden">
+      <div style="flex:1;overflow-y:auto;padding:20px;scrollbar-width:thin" id="school-chat-area">
+        ${this._chat.length === 0 ? `
+          <div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;text-align:center">
+            <div style="width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,#1A73E8,#0F9D58);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+              <span class="material-symbols-rounded" style="color:white;font-size:32px">auto_stories</span>
+            </div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px">${nb.title}</h3>
+            <p style="font-size:14px;color:var(--md-on-surface-variant);max-width:360px;line-height:1.6;margin-bottom:24px">
+              ${this._sources.length > 0 ? 'Chatea con tus ' + this._sources.length + ' fuentes. Haz preguntas sobre el contenido.' : 'Añade fuentes para empezar a chatear con tu conocimiento.'}
+            </p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:440px;width:100%">
+              ${[
+                '¿Cuáles son los puntos clave de mis fuentes?',
+                'Haz un resumen de lo más importante',
+                'Genera 10 preguntas de examen sobre el tema',
+                'Explícame los conceptos más difíciles'
+              ].map(q=>`
+                <button onclick="School._sendQuestion('${nb.id}','${q}')" style="padding:10px 14px;border-radius:12px;border:1px solid var(--md-outline-variant);background:var(--md-surface-container);cursor:pointer;text-align:left;font-size:12px;color:var(--md-on-surface);line-height:1.5;transition:all .15s"
+                  onmouseover="this.style.background='var(--md-surface-container-high)'" onmouseout="this.style.background='var(--md-surface-container)'">
+                  ${q}
+                </button>`).join('')}
+            </div>
+          </div>` : `
+          <div id="school-messages">
+            ${this._chat.map(m => `
+              <div style="margin-bottom:16px;display:flex;${m.role==='user'?'justify-content:flex-end':''}" >
+                ${m.role==='assistant' ? `<div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1A73E8,#0F9D58);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:10px;margin-top:2px"><span class="material-symbols-rounded" style="color:white;font-size:14px">auto_stories</span></div>` : ''}
+                <div style="max-width:75%;background:${m.role==='user'?'var(--md-primary)':'var(--md-surface-container)'};color:${m.role==='user'?'white':'var(--md-on-surface)'};padding:12px 16px;border-radius:${m.role==='user'?'16px 16px 4px 16px':'4px 16px 16px 16px'};font-size:14px;line-height:1.6">
+                  ${m.role==='assistant'?renderMarkdown(m.content):m.content}
+                </div>
+              </div>`).join('')}
+          </div>`}
+        <div id="school-typing" style="display:none;padding:10px 0">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1A73E8,#0F9D58);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span class="material-symbols-rounded" style="color:white;font-size:14px">auto_stories</span></div>
+            <div style="padding:10px 14px;border-radius:4px 16px 16px 16px;background:var(--md-surface-container);font-size:13px;color:var(--md-on-surface-variant)">${gemDotsHtml('Analizando fuentes...')}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div style="padding:14px 20px;border-top:1px solid var(--md-outline-variant);background:var(--md-surface-container-low);flex-shrink:0">
+        <div style="display:flex;gap:10px;align-items:flex-end;background:var(--md-surface-container-high);border-radius:16px;border:1.5px solid var(--md-outline-variant);padding:10px 14px;transition:border-color .2s"
+          onfocusin="this.style.borderColor='var(--md-primary)'" onfocusout="this.style.borderColor='var(--md-outline-variant)'">
+          <textarea id="school-input" rows="1" placeholder="Pregunta sobre tus fuentes..."
+            style="flex:1;border:none;background:transparent;outline:none;font-family:var(--md-font-body);font-size:14px;color:var(--md-on-surface);resize:none;max-height:120px;overflow-y:auto;line-height:1.5"
+            onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();School._sendQuestion('${nb.id}',document.getElementById('school-input').value);}">
+          </textarea>
+          <button onclick="School._sendQuestion('${nb.id}',document.getElementById('school-input').value)"
+            style="width:34px;height:34px;border-radius:10px;background:var(--md-primary);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:opacity .15s"
+            onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+            <span class="material-symbols-rounded" style="color:white;font-size:18px">send</span>
+          </button>
+        </div>
+        <div style="font-size:10px;color:var(--md-on-surface-variant);margin-top:6px;text-align:center">Powered by SurfSense Architecture · Open Source · Gratuito</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Notes & Tools -->
+    <div style="border-left:1px solid var(--md-outline-variant);overflow-y:auto;padding:16px;background:var(--md-surface-container-lowest);scrollbar-width:thin">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--md-on-surface-variant);text-transform:uppercase;margin-bottom:12px">Herramientas</div>
+
+      <!-- Quick tools -->
+      ${[
+        {icon:'summarize',color:'#1A73E8',label:'Resumen IA',action:`School._quickTool('${nb.id}','summary')`},
+        {icon:'quiz',color:'#0F9D58',label:'Quiz de repaso',action:`School._quickTool('${nb.id}','quiz')`},
+        {icon:'timeline',color:'#E91E63',label:'Línea del tiempo',action:`School._quickTool('${nb.id}','timeline')`},
+        {icon:'compare_arrows',color:'#F59E0B',label:'Comparar conceptos',action:`School._quickTool('${nb.id}','compare')`},
+        {icon:'record_voice_over',color:'#7C3AED',label:'Explicar oral',action:`School._quickTool('${nb.id}','explain')`},
+        {icon:'download',color:'#0891B2',label:'Exportar PDF',action:`School._quickTool('${nb.id}','export')`}
+      ].map(t=>`
+        <button onclick="${t.action}" style="width:100%;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;border:1px solid var(--md-outline-variant);background:var(--md-surface-container);cursor:pointer;margin-bottom:6px;transition:all .15s;text-align:left"
+          onmouseover="this.style.background='var(--md-surface-container-high)'" onmouseout="this.style.background='var(--md-surface-container)'">
+          <span class="material-symbols-rounded" style="font-size:18px;color:${t.color}">${t.icon}</span>
+          <span style="font-size:13px;font-weight:600;color:var(--md-on-surface)">${t.label}</span>
+        </button>`).join('')}
+
+      <hr style="border:none;height:1px;background:var(--md-outline-variant);margin:12px 0">
+
+      <!-- Notes section -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+        <span style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--md-on-surface-variant);text-transform:uppercase">Notas</span>
+        <button onclick="School._addNote('${nb.id}')" style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:100px;background:var(--md-primary-container);color:var(--md-primary);border:none;cursor:pointer;font-size:11px;font-weight:600">
+          <span class="material-symbols-rounded" style="font-size:14px">add</span>Añadir
+        </button>
+      </div>
+      <div id="notes-list">
+        ${(nb.notesList || []).map((note, i) => `
+          <div style="background:var(--md-surface-container);border-radius:10px;padding:10px 12px;margin-bottom:8px;border:1px solid var(--md-outline-variant);position:relative">
+            <div style="font-size:12px;color:var(--md-on-surface);line-height:1.5">${note}</div>
+            <button onclick="School._deleteNote('${nb.id}',${i})" style="position:absolute;top:6px;right:6px;border:none;background:none;cursor:pointer;color:var(--md-on-surface-variant)">
+              <span class="material-symbols-rounded" style="font-size:14px">close</span>
+            </button>
+          </div>`).join('')}
+        ${!(nb.notesList || []).length ? `<div style="font-size:12px;color:var(--md-on-surface-variant);text-align:center;padding:12px 0;opacity:.6">Tus notas aparecerán aquí</div>` : ''}
+      </div>
+
+      <!-- Stats -->
+      <hr style="border:none;height:1px;background:var(--md-outline-variant);margin:12px 0">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--md-on-surface-variant);text-transform:uppercase;margin-bottom:10px">Estadísticas</div>
+      ${[
+        {label:'Fuentes', value: this._sources.length, icon:'description'},
+        {label:'Chats', value: nb.chats || 0, icon:'chat'},
+        {label:'Notas', value: (nb.notesList||[]).length, icon:'sticky_note_2'},
+      ].map(s=>`
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--md-outline-variant)">
+          <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--md-on-surface-variant)">
+            <span class="material-symbols-rounded" style="font-size:14px">${s.icon}</span>${s.label}
+          </div>
+          <span style="font-size:14px;font-weight:700;color:var(--md-on-surface)">${s.value}</span>
+        </div>`).join('')}
+    </div>
+  </div>
+
+</div>`;
+
+    // Auto-resize textarea
+    const ta = document.getElementById('school-input');
+    if (ta) {
+      ta.addEventListener('input', () => {
+        ta.style.height = 'auto';
+        ta.style.height = Math.min(ta.scrollHeight, 120) + 'px';
+      });
+    }
+  },
+
+  async _sendQuestion(nbId, question) {
+    if (!question || !question.trim() || this._chatting) return;
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    const inp = document.getElementById('school-input');
+    if (inp) inp.value = '';
+    this._chatting = true;
+    this._chat.push({ role: 'user', content: question.trim() });
+    nb.chats = (nb.chats || 0) + 1;
+    this.save();
+    this._renderNotebook(nb);
+    const chatArea = document.getElementById('school-chat-area');
+    if (chatArea) chatArea.scrollTop = chatArea.scrollHeight;
+    const typing = document.getElementById('school-typing');
+    if (typing) typing.style.display = 'block';
+    const sourcesCtx = this._sources.length > 0
+      ? `Fuentes del notebook:\n${this._sources.map((s, i) => `${i+1}. ${s}`).join('\n')}\n\n`
+      : '';
+    const systemPrompt = `Eres un asistente de estudio de NotebookLM / SurfSense. Analizas las fuentes del usuario y respondes preguntas sobre ellas con precisión y citas. ${sourcesCtx}Responde en español con formato Markdown. Cita las fuentes cuando sea relevante.`;
+    let full = '';
+    try {
+      await NEXUS.run([{ role: 'user', content: question.trim() }], ch => {
+        full += ch;
+        const typingEl = document.getElementById('school-typing');
+        if (typingEl) typingEl.style.display = 'none';
+        const msgs = document.getElementById('school-messages');
+        if (!msgs) return;
+        // Update last assistant message or add new
+        const lastAssistant = msgs.querySelector('[data-role="assistant-last"]');
+        if (lastAssistant) {
+          lastAssistant.innerHTML = renderMarkdown(full);
+        } else {
+          const div = document.createElement('div');
+          div.style.cssText = 'margin-bottom:16px;display:flex;';
+          div.innerHTML = `<div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1A73E8,#0F9D58);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:10px;margin-top:2px"><span class="material-symbols-rounded" style="color:white;font-size:14px">auto_stories</span></div>
+          <div data-role="assistant-last" style="max-width:75%;background:var(--md-surface-container);padding:12px 16px;border-radius:4px 16px 16px 16px;font-size:14px;line-height:1.6">${renderMarkdown(full)}</div>`;
+          msgs.appendChild(div);
+        }
+        const ca = document.getElementById('school-chat-area');
+        if (ca) ca.scrollTop = ca.scrollHeight;
+      }, { system: systemPrompt, model: 'auto', skipReflection: true });
+      this._chat.push({ role: 'assistant', content: full });
+    } catch(e) {}
+    this._chatting = false;
+  },
+
+  _addSource(nbId) {
+    const src = prompt('Añadir fuente (URL, nombre de archivo, o descripción):');
+    if (!src) return;
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    if (!nb.sources) nb.sources = [];
+    nb.sources.push(src);
+    this._sources = [...nb.sources];
+    this.save();
+    this._renderNotebook(nb);
+    showToast('Fuente añadida ✓');
+  },
+
+  _addSourceType(nbId, type) {
+    const labels = { 'Archivo': 'Nombre del archivo (ej: mi_documento.pdf):', 'URL': 'URL a añadir:', 'YouTube': 'URL de YouTube:', 'Texto': 'Pega tu texto o nota:', 'Buscar web': 'Qué buscar en la web:' };
+    const src = prompt(labels[type] || 'Fuente:');
+    if (!src) return;
+    this._addSourceDirect(nbId, `${type}: ${src}`);
+  },
+
+  _addSourceDirect(nbId, src) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    if (!nb.sources) nb.sources = [];
+    nb.sources.push(src);
+    this._sources = [...nb.sources];
+    this.save();
+    this._renderNotebook(nb);
+    showToast('Fuente añadida ✓');
+  },
+
+  _removeSource(nbId, idx) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb || !nb.sources) return;
+    nb.sources.splice(idx, 1);
+    this._sources = [...nb.sources];
+    this.save();
+    this._renderNotebook(nb);
+  },
+
+  _addNote(nbId) {
+    const note = prompt('Escribe tu nota:');
+    if (!note) return;
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    if (!nb.notesList) nb.notesList = [];
+    nb.notesList.push(note);
+    nb.notes = nb.notesList.length;
+    this.save();
+    this._renderNotebook(nb);
+  },
+
+  _deleteNote(nbId, idx) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb || !nb.notesList) return;
+    nb.notesList.splice(idx, 1);
+    nb.notes = nb.notesList.length;
+    this.save();
+    this._renderNotebook(nb);
+  },
+
+  async _quickTool(nbId, tool) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    const prompts = {
+      summary: 'Haz un resumen ejecutivo completo de todas las fuentes. Incluye: puntos clave, conceptos principales y conclusiones.',
+      quiz: 'Genera 10 preguntas de examen con respuesta (tipo test y respuesta corta) sobre el contenido de las fuentes.',
+      timeline: 'Extrae todos los eventos cronológicos de las fuentes y crea una línea del tiempo detallada en formato Markdown.',
+      compare: 'Identifica y compara los conceptos principales de las fuentes. Crea una tabla comparativa.',
+      explain: 'Explica los conceptos más complejos de las fuentes de forma sencilla, con ejemplos y analogías.',
+      export: 'Genera un documento completo y estructurado con todo el contenido de las fuentes para exportar a PDF.'
+    };
+    const q = prompts[tool] || 'Analiza las fuentes';
+    await this._sendQuestion(nbId, q);
+  },
+
+  async _generatePodcast(nbId) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    await this._sendQuestion(nbId, `Crea un guión de podcast de 2 personas (Host A y Host B) de 10 minutos sobre el tema "${nb.title}". Debe ser conversacional, informativo y entretenido. Incluye: intro, 5 segmentos temáticos con diálogo natural, y outro. Basa el contenido en las fuentes disponibles.`);
+  },
+
+  async _generateMindmap(nbId) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    await this._sendQuestion(nbId, `Crea un mapa mental completo en texto para "${nb.title}". Usa formato jerárquico con: concepto central, 5-7 ramas principales, sub-ramas y conexiones. Usa indentación y símbolos para visualizarlo claramente.`);
+  },
+
+  async _generateFlashcards(nbId) {
+    const nb = this._notebooks.find(x => x.id === nbId);
+    if (!nb) return;
+    await this._sendQuestion(nbId, `Genera 15 flashcards de estudio para "${nb.title}". Formato: **Pregunta:** ... **Respuesta:** ... Cubre los conceptos clave de las fuentes con preguntas de diferentes dificultades.`);
+  }
+};
+
+
+
+
+// ═══════════════════════════════════════════════════════════════════════
+//  OPEN SOURCE AI HUB — 50+ IAs Open Source del Mundo
+//  Reemplaza el motor Urbalux · Cada función usa el código base real
 // ═══════════════════════════════════════════════════════════════════════
 const AIHub = {
   _active: null,
   _activeTool: null,
   _activeToolBtnId: null,
+  _activeCategory: 'all',
+
+  categories: [
+    {id:'all',label:'Todas',icon:'apps'},
+    {id:'llm',label:'LLMs',icon:'smart_toy'},
+    {id:'code',label:'Código & Dev',icon:'code'},
+    {id:'image',label:'Imagen & Vídeo',icon:'image'},
+    {id:'automation',label:'Automatización',icon:'automation'},
+    {id:'deploy',label:'Deploy & Cloud',icon:'cloud_upload'},
+    {id:'design',label:'Diseño & UI',icon:'design_services'},
+    {id:'data',label:'Datos & RAG',icon:'storage'},
+    {id:'voice',label:'Voz & Audio',icon:'mic'},
+    {id:'edu',label:'Educación',icon:'school'},
+  ],
 
   platforms: [
-    { id:'claude',    name:'Claude',         maker:'Anthropic',    color:'#D97757', icon:'🤖', model:'claude',
-      desc:'El mejor para análisis profundo, escritura creativa y razonamiento complejo.',
+    // ── LLMs & Chat ──────────────────────────────────────────────
+    { id:'openwebui',   cat:'llm',    name:'Open WebUI',      maker:'Open WebUI',      color:'#0EA5E9', icon:'🌐',
+      repo:'open-webui/open-webui', stars:'40k+', lang:'Python/Svelte',
+      desc:'Interfaz web self-hosted para Ollama y cualquier API OpenAI-compatible. El ChatGPT open source más popular del mundo.',
+      what:'Open WebUI es un panel de chat avanzado y autoalojado que funciona con Ollama, LM Studio, llama.cpp y APIs compatibles con OpenAI. Permite historial de conversaciones, RAG, plugins, multi-usuario, SSO y mucho más.',
       tools:[
-        {id:'review',    label:'Code Review',       icon:'code',        desc:'Revisión de código con errores, mejoras y refactorización'},
-        {id:'doc',       label:'Análisis de Doc',    icon:'description', desc:'Analiza y resume documentos largos con insights'},
-        {id:'essay',     label:'Ensayo largo',       icon:'edit_note',   desc:'Redacta ensayos académicos o profesionales completos'},
-        {id:'think',     label:'Pensamiento crítico',icon:'psychology',  desc:'Analiza cualquier tema desde múltiples perspectivas'},
-        {id:'email',     label:'Email profesional',  icon:'mail',        desc:'Escribe emails formales e informales de alto impacto'},
-        {id:'debate',    label:'Debate IA',          icon:'forum',       desc:'Argumenta a favor y en contra de cualquier posición'},
+        {id:'setup',    label:'Instalar Open WebUI',  icon:'download',     desc:'Guía paso a paso con Docker'},
+        {id:'models',   label:'Gestionar modelos',     icon:'model_training',desc:'Qué modelos instalar y cómo'},
+        {id:'rag',      label:'RAG con documentos',    icon:'description',  desc:'Chatea con tus PDFs localmente'},
+        {id:'plugins',  label:'Plugins & Functions',   icon:'extension',    desc:'Extend con funciones personalizadas'},
+        {id:'prompt',   label:'Prompt para Open WebUI',icon:'edit',         desc:'Optimiza tus prompts'},
       ]
     },
-    { id:'gamma',     name:'Gamma AI',       maker:'Gamma App',    color:'#7C3AED', icon:'🎯', model:'gemini-large',
-      desc:'Especializada en presentaciones y documentos visuales de nivel profesional.',
+    { id:'librechat',   cat:'llm',    name:'LibreChat',       maker:'Danny Avila',      color:'#8B5CF6', icon:'💬',
+      repo:'danny-avila/LibreChat', stars:'18k+', lang:'Node.js/React',
+      desc:'Alternativa open source a ChatGPT Plus. Soporta GPT-4, Claude, Gemini, Ollama y más en una sola UI.',
+      what:'LibreChat replica la experiencia de ChatGPT pero soporta múltiples proveedores: OpenAI, Anthropic, Google, Azure, Ollama, Groq. Tiene plugins, conversaciones compartidas, autenticación y funciones de código.',
       tools:[
-        {id:'pres',      label:'Presentación Pro',   icon:'slideshow',   desc:'Crea una presentación ejecutiva lista para usar'},
-        {id:'onepager',  label:'One-Pager',          icon:'article',     desc:'Documento de una página con propuesta de valor'},
-        {id:'proposal',  label:'Propuesta comercial',icon:'business',    desc:'Propuesta profesional con estructura McKinsey'},
-        {id:'deck',      label:'Pitch Deck',         icon:'bar_chart',   desc:'Deck de inversión con problema/solución/tracción'},
-        {id:'informe',   label:'Informe ejecutivo',  icon:'summarize',   desc:'Informe con KPIs, análisis y recomendaciones'},
+        {id:'install',  label:'Instalación completa',  icon:'download',     desc:'Docker Compose setup guide'},
+        {id:'multi',    label:'Multi-proveedor',        icon:'hub',          desc:'Configura GPT + Claude + Gemini'},
+        {id:'plugins2', label:'Plugins LibreChat',      icon:'extension',    desc:'Búsqueda web, código, imágenes'},
+        {id:'auth',     label:'Autenticación',          icon:'lock',         desc:'Login con Google, GitHub o email'},
+        {id:'code2',    label:'Code Interpreter',       icon:'terminal',     desc:'Ejecuta código en sandbox'},
       ]
     },
-    { id:'genspark',  name:'Genspark',       maker:'Genspark AI',  color:'#0891B2', icon:'🔍', model:'openai-large',
-      desc:'Motor de investigación profunda con síntesis de múltiples fuentes.',
+    { id:'llama',       cat:'llm',    name:'Llama 3',         maker:'Meta AI',          color:'#1877F2', icon:'🦙',
+      repo:'meta-llama/llama3', stars:'55k+', lang:'Python',
+      desc:'El LLM más avanzado de Meta. Llama 3.3 70B es comparable a GPT-4. Gratis y open weights.',
+      what:'Llama 3 de Meta es uno de los modelos de lenguaje más capaces del mundo y es completamente open source. Con Llama 3.3 70B obtienes rendimiento comparable a GPT-4 que puedes ejecutar localmente.',
       tools:[
-        {id:'research',  label:'Deep Research',      icon:'search',      desc:'Informe de investigación exhaustivo con secciones'},
-        {id:'compete',   label:'Análisis competitivo',icon:'compare',    desc:'Análisis completo de competidores en un sector'},
-        {id:'trend',     label:'Tendencias de sector',icon:'trending_up',desc:'Tendencias actuales y proyecciones de futuro'},
-        {id:'factcheck', label:'Fact Check',          icon:'verified',   desc:'Verifica y contextualiza afirmaciones con evidencias'},
-        {id:'review2',   label:'Revisión de mercado', icon:'analytics',  desc:'Tamaño de mercado, segmentos y oportunidades'},
+        {id:'chat',     label:'Chat con Llama',         icon:'chat',         desc:'Conversa con Llama 3.3 vía API'},
+        {id:'finetune', label:'Fine-tuning',            icon:'tune',         desc:'Ajusta Llama para tu caso de uso'},
+        {id:'compare',  label:'Comparar versiones',     icon:'compare',      desc:'Llama 3.1 vs 3.2 vs 3.3'},
+        {id:'code3',    label:'Llama for Code',         icon:'code',         desc:'Genera código con Llama'},
+        {id:'rag2',     label:'RAG con Llama',          icon:'search',       desc:'Knowledge base con Llama'},
       ]
     },
-    { id:'manus',     name:'Manus',          maker:'Monica AI',    color:'#16A34A', icon:'🦾', model:'openai-large',
-      desc:'Agente autónomo que descompone tareas complejas en pasos ejecutables.',
+    { id:'qwen',        cat:'llm',    name:'Qwen 3',          maker:'Alibaba Cloud',    color:'#FF6A00', icon:'🤖',
+      repo:'QwenLM/Qwen', stars:'16k+', lang:'Python',
+      desc:'Qwen3 de Alibaba supera a GPT-4 en código y multilingüe. Excelente en español y chino.',
+      what:'Qwen3 es la última generación de modelos de Alibaba. Destaca en programación, matemáticas y comprensión multilingüe. Qwen-Coder 32B es especialmente potente para desarrollo de software.',
       tools:[
-        {id:'plan',      label:'Plan de proyecto',   icon:'account_tree',desc:'Desglose detallado de proyecto en fases y tareas'},
-        {id:'workflow',  label:'Workflow IA',         icon:'schema',      desc:'Automatización con pasos, herramientas y outputs'},
-        {id:'strategy',  label:'GTM Strategy',        icon:'rocket_launch',desc:'Plan go-to-market completo y accionable'},
-        {id:'sop',       label:'SOP / Procedimiento', icon:'checklist',  desc:'Procedimiento estándar de operación paso a paso'},
-        {id:'sprint',    label:'Sprint Planning',     icon:'sprint',      desc:'Planificación ágil con user stories y estimaciones'},
+        {id:'qwenchat', label:'Chat con Qwen',          icon:'chat',         desc:'Usa Qwen3-32B para conversación'},
+        {id:'qwencode', label:'Qwen-Coder',             icon:'code',         desc:'El mejor modelo para programar'},
+        {id:'qwenmath', label:'Qwen-Math',              icon:'calculate',    desc:'Resuelve problemas matemáticos'},
+        {id:'qwenlong', label:'Documentos largos',      icon:'description',  desc:'Procesamiento de contexto extenso'},
+        {id:'qwenvl',   label:'Qwen Vision',            icon:'image',        desc:'Análisis de imágenes con Qwen-VL'},
       ]
     },
-    { id:'gemini',    name:'Gemini',         maker:'Google',       color:'#4285F4', icon:'💎', model:'gemini-large',
-      desc:'IA multimodal de Google con búsqueda actualizada y análisis avanzado.',
+    { id:'deepseek',    cat:'llm',    name:'DeepSeek',        maker:'DeepSeek AI',      color:'#4D6BFE', icon:'🧠',
+      repo:'deepseek-ai/DeepSeek-R1', stars:'80k+', lang:'Python',
+      desc:'DeepSeek R1 igualó a GPT-o1 en razonamiento y matemáticas. Completamente gratis y open source.',
+      what:'DeepSeek R1 revolucionó el mundo de la IA al igualar el rendimiento de GPT-o1 de OpenAI a una fracción del costo. El modelo usa Chain-of-Thought y es excelente en ciencia, código y matemáticas.',
       tools:[
-        {id:'search',    label:'Research web',        icon:'travel_explore',desc:'Investigación con datos actualizados de internet'},
-        {id:'translate', label:'Traducción avanzada', icon:'translate',   desc:'Traducción con notas culturales y variantes'},
-        {id:'code',      label:'Code Generation',     icon:'code',        desc:'Genera código limpio con tests y documentación'},
-        {id:'summarize', label:'Resumen inteligente', icon:'summarize',   desc:'Resume documentos conservando la esencia'},
-        {id:'math',      label:'Matemáticas',         icon:'calculate',   desc:'Resuelve problemas matemáticos paso a paso'},
-        {id:'multimodal',label:'Análisis visual',     icon:'visibility',  desc:'Describe y analiza contenido visual detalladamente'},
+        {id:'r1reason', label:'Razonamiento R1',        icon:'psychology',   desc:'Resolución de problemas paso a paso'},
+        {id:'dscode',   label:'DeepSeek-Coder V3',      icon:'terminal',     desc:'El mejor coder open source actual'},
+        {id:'dsmath',   label:'Matemáticas avanzadas',  icon:'functions',    desc:'Cálculo, álgebra, estadística'},
+        {id:'dsscience',label:'Análisis científico',    icon:'science',      desc:'Papers, experimentos, teoremas'},
+        {id:'dsdebug',  label:'Debug profundo',         icon:'bug_report',   desc:'Analiza bugs con razonamiento'},
       ]
     },
-    { id:'chatgpt',   name:'ChatGPT',        maker:'OpenAI',       color:'#10A37F', icon:'💬', model:'openai',
-      desc:'El asistente conversacional más versátil del mundo. GPT-4o.',
+    { id:'gemma',       cat:'llm',    name:'Gemma 3',         maker:'Google',           color:'#4285F4', icon:'💎',
+      repo:'google/gemma', stars:'12k+', lang:'Python/JAX',
+      desc:'Gemma 3 de Google: pequeño, rápido y eficiente. El mejor modelo para ejecutar en laptops y móviles.',
+      what:'Gemma 3 es la familia de modelos abiertos de Google, diseñada para ser ligera y eficiente. Gemma 3 27B tiene rendimiento excepcional para su tamaño y puede ejecutarse en hardware consumer.',
       tools:[
-        {id:'chat',      label:'Chat general',        icon:'chat',        desc:'Conversación general con GPT-4o'},
-        {id:'codehelp',  label:'Ayuda con código',    icon:'code',        desc:'Debug, explicaciones, refactorización'},
-        {id:'creative',  label:'Escritura creativa',  icon:'auto_awesome',desc:'Cuentos, guiones, posts virales, copywriting'},
-        {id:'data',      label:'Análisis de datos',   icon:'bar_chart',   desc:'Interpreta datos y sugiere visualizaciones'},
-        {id:'prompt',    label:'Prompt Engineer',     icon:'engineering', desc:'Diseña prompts perfectos para cualquier IA'},
-        {id:'dalle',     label:'Prompt para imágenes',icon:'image',       desc:'Prompts optimizados para generación de imágenes'},
+        {id:'gemmachat',label:'Chat con Gemma 3',       icon:'chat',         desc:'Conversación inteligente local'},
+        {id:'gemmacode',label:'Código con Gemma',       icon:'code',         desc:'Genera y explica código'},
+        {id:'gemmafast',label:'Gemma 2B rápido',        icon:'bolt',         desc:'Respuestas ultrarrápidas en local'},
+        {id:'gemmafine',label:'Fine-tuning Gemma',      icon:'tune',         desc:'Personaliza Gemma para tu dominio'},
+        {id:'gemmamul', label:'Multilingüe',            icon:'translate',    desc:'Gemma en 35+ idiomas'},
       ]
     },
-    { id:'deepseek',  name:'DeepSeek',       maker:'DeepSeek AI',  color:'#4D6BFE', icon:'🧠', model:'deepseek',
-      desc:'El mejor modelo open-source para código, matemáticas y razonamiento científico.',
+    { id:'mistral',     cat:'llm',    name:'Mistral',         maker:'Mistral AI',       color:'#FF7000', icon:'🌬️',
+      repo:'mistralai/mistral-src', stars:'9k+', lang:'Python',
+      desc:'Mistral 7B y Mixtral 8x22B — los más eficientes de su clase. MoE architecture open source.',
+      what:'Mistral ofrece modelos de alta eficiencia con Mixture of Experts. Mistral-7B supera a Llama-2 13B y Mixtral 8x22B iguala a GPT-4 en muchos benchmarks, siendo mucho más rápido.',
       tools:[
-        {id:'algo',      label:'Algoritmo avanzado',  icon:'account_tree',desc:'Diseña algoritmos eficientes con análisis O(n)'},
-        {id:'math2',     label:'Matemáticas avanzadas',icon:'functions',  desc:'Álgebra, cálculo, estadística y ecuaciones'},
-        {id:'science',   label:'Análisis científico', icon:'science',     desc:'Explica conceptos con rigor y precisión'},
-        {id:'codegen',   label:'Code Generation',     icon:'terminal',    desc:'Código production-ready en cualquier lenguaje'},
-        {id:'debug2',    label:'Debug profundo',      icon:'bug_report',  desc:'Analiza y corrige bugs con explicación del error'},
-        {id:'r1chain',   label:'Razonamiento paso a paso',icon:'psychology',desc:'Resuelve problemas con cadena de razonamiento'},
+        {id:'mistrch',  label:'Chat con Mistral',       icon:'chat',         desc:'Usa Mistral Large o Mistral 7B'},
+        {id:'mixtral',  label:'Mixtral 8x22B',          icon:'hub',          desc:'Arquitectura Mixture of Experts'},
+        {id:'mistrcode',label:'Codestral',              icon:'code',         desc:'El coder de Mistral para fill-in'},
+        {id:'mistrapi', label:'Mistral API',            icon:'api',          desc:'Integra Mistral en tu app'},
+        {id:'mistremb',label:'Mistral Embeddings',      icon:'storage',      desc:'Embeddings para RAG y búsqueda'},
       ]
     },
-    { id:'perplexity',name:'Perplexity',     maker:'Perplexity AI',color:'#20B2AA', icon:'🔎', model:'gemini-search',
-      desc:'IA con búsqueda web integrada. Responde con fuentes y datos actualizados.',
+    { id:'huggingface', cat:'llm',    name:'Hugging Face',    maker:'Hugging Face',     color:'#FF9A00', icon:'🤗',
+      repo:'huggingface/transformers', stars:'130k+', lang:'Python',
+      desc:'El GitHub de la IA. 800k+ modelos, datasets y Spaces. El hub central del ecosistema open source.',
+      what:'Hugging Face es la plataforma de referencia para IA open source. Ofrece el Transformers library, Hub de modelos, Datasets, Inference API, Spaces para demos y mucho más.',
       tools:[
-        {id:'newsearch', label:'Búsqueda web IA',     icon:'travel_explore',desc:'Respuesta fundamentada en búsqueda web real'},
-        {id:'current',   label:'Noticias actuales',   icon:'newspaper',   desc:'Resumen de noticias recientes sobre cualquier tema'},
-        {id:'compare2',  label:'Comparativa actualizada',icon:'compare',  desc:'Compara opciones con datos actuales del mercado'},
-        {id:'academic',  label:'Investigación académica',icon:'school',   desc:'Responde con rigor académico y citas'},
-        {id:'quickfact', label:'Fact rápido',          icon:'bolt',       desc:'Respuesta directa y precisa a preguntas factuales'},
+        {id:'hfmodels', label:'Explorar modelos',       icon:'model_training',desc:'800k+ modelos disponibles'},
+        {id:'hfspaces', label:'Hugging Face Spaces',    icon:'apps',         desc:'Demos interactivos de cualquier IA'},
+        {id:'hfpipe',   label:'Transformers Pipeline',  icon:'account_tree', desc:'Usa cualquier modelo en 3 líneas'},
+        {id:'hfinfer',  label:'Inference API',          icon:'api',          desc:'API gratuita para cualquier modelo'},
+        {id:'hfdataset',label:'Datasets',               icon:'storage',      desc:'Entrena con datasets de calidad'},
       ]
     },
-    { id:'nanobanana',name:'Nano Banana Pro',maker:'Nano AI',       color:'#F59E0B', icon:'🍌', model:'phi',
-      desc:'IA ultra-compacta y rápida. Perfecta para resúmenes y tareas simples.',
+    // ── Código & Dev ──────────────────────────────────────────────
+    { id:'opencode',    cat:'code',   name:'OpenCode',        maker:'OpenCode',         color:'#22C55E', icon:'💻',
+      repo:'sst/opencode', stars:'25k+', lang:'TypeScript',
+      desc:'AI coding agent que vive en tu terminal. Alternativa open source a Claude Code y Cursor.',
+      what:'OpenCode es un agente de programación que corre en tu terminal y puede leer, editar, ejecutar y testear código. Similar a Claude Code pero completamente open source y gratis.',
       tools:[
-        {id:'tl',        label:'TL;DR',               icon:'compress',    desc:'Resume cualquier texto en 3 puntos clave'},
-        {id:'eli5',      label:'Explicación fácil',   icon:'child_care',  desc:'Explica como si tuvieras 5 años'},
-        {id:'bullets',   label:'Convertir a bullets', icon:'format_list_bulleted',desc:'Convierte texto en lista accionable'},
-        {id:'title',     label:'Mejorar título',      icon:'title',       desc:'5 títulos alternativos más atractivos'},
-        {id:'rephrase',  label:'Reformular',          icon:'autorenew',   desc:'Reescribe el texto en otro estilo o tono'},
+        {id:'ocinstall',label:'Instalar OpenCode',      icon:'download',     desc:'Setup en terminal Linux/Mac'},
+        {id:'ocagent',  label:'Coding Agent',           icon:'smart_toy',    desc:'Automatiza tareas de código'},
+        {id:'ocrefac',  label:'Refactorización',        icon:'autorenew',    desc:'Refactoriza proyectos completos'},
+        {id:'ocdebug',  label:'Debug automático',       icon:'bug_report',   desc:'Detecta y corrige bugs'},
+        {id:'octest',   label:'Generar tests',          icon:'checklist',    desc:'TDD con cobertura completa'},
       ]
     },
-    { id:'sora',      name:'Sora',           maker:'OpenAI',       color:'#6366F1', icon:'🎬', model:'claude',
-      desc:'IA de generación de vídeo de OpenAI. Genera prompts y storyboards.',
+    { id:'aidev',       cat:'code',   name:'AI Dev (Aider)',  maker:'Paul Gauthier',    color:'#10B981', icon:'🛠️',
+      repo:'paul-gauthier/aider', stars:'23k+', lang:'Python',
+      desc:'Aider: AI pair programming en tu terminal. Edita código con GPT-4, Claude o cualquier LLM.',
+      what:'Aider es un asistente de programación en terminal que se integra con Git. Puede editar múltiples archivos, hacer commits automáticos y trabajar con cualquier LLM incluyendo modelos locales.',
       tools:[
-        {id:'vidprompt', label:'Video Prompt',        icon:'movie',       desc:'Crea el prompt perfecto para generar vídeos con Sora'},
-        {id:'storyboard',label:'Storyboard',          icon:'view_carousel',desc:'Storyboard escena por escena con descripciones'},
-        {id:'cinematic', label:'Secuencia cinemática',icon:'videocam',    desc:'Secuencia con movimientos de cámara y atmósfera'},
-        {id:'shortfilm', label:'Cortometraje IA',     icon:'theaters',    desc:'Guión + storyboard de cortometraje de 2 min'},
-        {id:'prompt_series',label:'Serie de prompts', icon:'burst_mode',  desc:'10 prompts temáticos para contenido coherente'},
+        {id:'aiderinst',label:'Instalar Aider',         icon:'download',     desc:'pip install aider-chat'},
+        {id:'aidercode',label:'Programar con Aider',    icon:'code',         desc:'Edita código con comandos naturales'},
+        {id:'aidergit', label:'Git integration',        icon:'commit',       desc:'Commits automáticos con IA'},
+        {id:'aiderarch',label:'Arquitectura de proyecto',icon:'architecture',desc:'Diseña y genera estructura completa'},
+        {id:'aidertest',label:'Test coverage',          icon:'checklist',    desc:'Genera tests exhaustivos'},
       ]
     },
-    { id:'copilot',   name:'Copilot',        maker:'Microsoft',    color:'#0078D4', icon:'🪄', model:'openai-large',
-      desc:'Asistente de código de Microsoft para el flujo de desarrollo.',
+    { id:'continuedev', cat:'code',   name:'Continue.dev',   maker:'Continue',         color:'#6366F1', icon:'⚡',
+      repo:'continuedev/continue', stars:'18k+', lang:'TypeScript',
+      desc:'El copiloto de código open source para VS Code y JetBrains. Usa cualquier modelo LLM.',
+      what:'Continue.dev es la alternativa open source a GitHub Copilot. Se instala como extensión en VS Code/JetBrains y te permite usar GPT-4, Claude, Llama o cualquier modelo local como asistente.',
       tools:[
-        {id:'complete',  label:'Code Completion',     icon:'auto_fix_high',desc:'Completa fragmentos de código inteligentemente'},
-        {id:'prreview',  label:'PR Review',           icon:'rate_review',  desc:'Revisa Pull Requests con feedback detallado'},
-        {id:'docstring', label:'Docstrings / JSDoc',  icon:'comment',      desc:'Genera documentación completa para código'},
-        {id:'unittest',  label:'Unit Tests',          icon:'checklist',    desc:'Genera tests unitarios con casos edge'},
-        {id:'refactor',  label:'Refactorización',     icon:'transform',   desc:'Refactoriza código legacy a patrones modernos'},
-        {id:'security',  label:'Security Audit',      icon:'security',    desc:'Detecta vulnerabilidades y problemas de seguridad'},
+        {id:'continstl',label:'Instalar Continue',      icon:'extension',    desc:'Extensión para VS Code'},
+        {id:'contmodel',label:'Configurar modelo',      icon:'settings',     desc:'Conecta con Ollama, OpenAI, etc.'},
+        {id:'contcomp', label:'Autocompletado',         icon:'auto_fix_high',desc:'Completa código al escribir'},
+        {id:'contchat', label:'Chat con tu código',     icon:'chat',         desc:'Explica y modifica código'},
+        {id:'contrag',  label:'RAG de documentos',      icon:'search',       desc:'Indexa tu codebase para RAG'},
       ]
     },
-    { id:'android',   name:'Android Studio', maker:'Google',       color:'#3DDC84', icon:'📱', model:'qwen-coder',
-      desc:'Generador de código Android/Kotlin con Jetpack Compose y MVVM.',
+    { id:'localai',     cat:'code',   name:'LocalAI',        maker:'LocalAI',          color:'#A78BFA', icon:'🔧',
+      repo:'mudler/LocalAI', stars:'24k+', lang:'Go/Python',
+      desc:'API OpenAI-compatible 100% local y gratuita. Ejecuta LLMs, imágenes y audio sin internet.',
+      what:'LocalAI proporciona una API compatible con OpenAI que corre completamente en tu máquina. Soporta LLMs, generación de imágenes (Stable Diffusion), TTS, Whisper y más sin enviar datos a terceros.',
       tools:[
-        {id:'activity',  label:'Activity/Fragment',   icon:'view_in_ar',  desc:'Genera Activity o Fragment con Kotlin + ViewBinding'},
-        {id:'compose',   label:'Jetpack Compose UI',  icon:'widgets',     desc:'UI en Compose con estado y navegación'},
-        {id:'viewmodel', label:'ViewModel + LiveData',icon:'memory',      desc:'Arquitectura MVVM con ViewModel y Repository'},
-        {id:'retrofit',  label:'Retrofit API Client', icon:'api',         desc:'Cliente Retrofit con modelos e interceptors'},
-        {id:'room',      label:'Room Database',       icon:'storage',     desc:'Base de datos con Entity, DAO y Database'},
-        {id:'manifest',  label:'AndroidManifest',     icon:'article',     desc:'Configuración del AndroidManifest.xml explicada'},
+        {id:'laiinstall',label:'Instalar LocalAI',      icon:'download',     desc:'Docker o binario nativo'},
+        {id:'laiapi',   label:'API OpenAI compatible',  icon:'api',          desc:'Reemplaza openai.com con localhost'},
+        {id:'laiimage', label:'Imágenes con LocalAI',   icon:'image',        desc:'Stable Diffusion local'},
+        {id:'laitts',   label:'TTS con Piper',          icon:'mic',          desc:'Voz natural completamente local'},
+        {id:'laigpu',   label:'GPU vs CPU setup',       icon:'memory',       desc:'Optimiza rendimiento local'},
       ]
     },
-    { id:'grok',      name:'Grok',           maker:'xAI',          color:'#6B7280', icon:'⚡', model:'llama-large',
-      desc:'IA de xAI con tono irreverente, humor y análisis directo de tendencias.',
+    // ── Imagen & Vídeo ──────────────────────────────────────────────
+    { id:'stablediff',  cat:'image',  name:'Stable Diffusion',maker:'Stability AI',     color:'#7C3AED', icon:'🎨',
+      repo:'Stability-AI/stablediffusion', stars:'65k+', lang:'Python',
+      desc:'La IA de generación de imágenes open source más usada del mundo. SD 3.5 Medium es gratis.',
+      what:'Stable Diffusion permite generar imágenes de alta calidad completamente gratis y localmente. SDXL, SD 3.5 y el ecosistema de LoRAs hacen posible cualquier estilo artístico.',
       tools:[
-        {id:'roast',     label:'Roast / Crítica',     icon:'whatshot',    desc:'Crítica incisiva y divertida de cualquier cosa'},
-        {id:'twitter',   label:'Hilo de Twitter/X',   icon:'share',       desc:'Hilo viral con gancho, desarrollo y cierre impactante'},
-        {id:'hot',       label:'Opinión directa',     icon:'local_fire_department',desc:'Opinión directa y sin filtros sobre cualquier tema'},
-        {id:'trends',    label:'Análisis de tendencias',icon:'trending_up',desc:'Qué está viral y por qué importa'},
-        {id:'comedy',    label:'Monólogo stand-up',   icon:'theater_comedy',desc:'Monólogo de stand-up sobre cualquier tema'},
+        {id:'sdprompt',label:'Crear prompt perfecto',  icon:'edit',         desc:'Arquitectura de prompts para SD'},
+        {id:'sdlora',  label:'LoRA & estilos',         icon:'style',        desc:'Aplica estilos artísticos personalizados'},
+        {id:'sdinpaint',label:'Inpainting',            icon:'edit',         desc:'Edita partes de una imagen'},
+        {id:'sdcontrol',label:'ControlNet',            icon:'tune',         desc:'Control preciso de pose y composición'},
+        {id:'sdworkflow',label:'ComfyUI workflow',     icon:'account_tree', desc:'Diseña flujos de generación visual'},
       ]
     },
-    { id:'knowunity', name:'Knowunity',      maker:'Knowunity',    color:'#EC4899', icon:'📚', model:'openai-reasoning',
-      desc:'Plataforma de estudio con apuntes visuales, resúmenes y flashcards.',
+    { id:'flux',        cat:'image',  name:'Flux',            maker:'Black Forest Labs', color:'#EC4899', icon:'⚡',
+      repo:'black-forest-labs/flux', stars:'18k+', lang:'Python',
+      desc:'Flux.1 supera a Midjourney y DALL-E 3 en calidad fotorrealista. Open weights, gratis.',
+      what:'Flux.1 de Black Forest Labs es el estado del arte en generación de imágenes open source. Flux.1-dev y Flux.1-schnell ofrecen calidad fotorrealista excepcional y están disponibles gratuitamente.',
       tools:[
-        {id:'notes',     label:'Apuntes premium',     icon:'sticky_note_2',desc:'Apuntes completos de cualquier tema'},
-        {id:'summary',   label:'Resumen de examen',   icon:'school',      desc:'Resumen condensado para repasar antes del examen'},
-        {id:'mindmap2',  label:'Mapa mental',         icon:'account_tree',desc:'Mapa mental jerárquico con conceptos'},
-        {id:'flashcards2',label:'Flashcards',         icon:'style',       desc:'10 flashcards Q&A progresivas'},
-        {id:'explain',   label:'Explicación visual',  icon:'lightbulb',   desc:'Explicación con ejemplos y analogías'},
-        {id:'quiz2',     label:'Quiz de práctica',    icon:'quiz',        desc:'Examen de práctica con respuestas comentadas'},
+        {id:'fluxpro',  label:'Prompt para Flux',      icon:'auto_awesome', desc:'Prompts optimizados para Flux.1'},
+        {id:'fluxschn', label:'Flux Schnell (rápido)', icon:'bolt',         desc:'Genera en 4 pasos ultrarrápido'},
+        {id:'fluxdev',  label:'Flux Dev (calidad)',    icon:'image',        desc:'Máxima calidad fotorrealista'},
+        {id:'fluxedi',  label:'Flux Edit',             icon:'edit',         desc:'Edición y reemplazo de objetos'},
+        {id:'fluxctrl', label:'Flux ControlNet',       icon:'tune',         desc:'Control de composición y estructura'},
       ]
     },
-    { id:'astra',     name:'Astra AI',       maker:'Google DeepMind',color:'#FF6B35', icon:'👁️', model:'gemini',
-      desc:'Agente visual de Google para análisis de imágenes y escenas.',
+    { id:'lumaray',     cat:'image',  name:'Luma Ray',        maker:'Luma AI',          color:'#6366F1', icon:'🎬',
+      repo:'lumalabs-ai/dream-machine', stars:'5k+', lang:'Python',
+      desc:'Luma Ray 2 es el mejor generador de vídeo de IA. Dream Machine para videoclips cinematográficos.',
+      what:'Luma Ray 2 genera vídeos realistas de alta calidad a partir de texto o imágenes. Dream Machine permite crear clips cinematográficos con movimientos de cámara fluidos e iluminación natural.',
       tools:[
-        {id:'describe',  label:'Describir imagen',    icon:'image_search',desc:'Descripción detallada y análisis de imágenes'},
-        {id:'scene',     label:'Análisis de escena',  icon:'landscape',   desc:'Identifica objetos, contexto y emociones'},
-        {id:'ui_review', label:'UI/UX Review',        icon:'preview',     desc:'Evalúa diseño de interfaz con crítica constructiva'},
-        {id:'photo_improve',label:'Mejorar foto',     icon:'photo_filter',desc:'Sugerencias para composición y calidad fotográfica'},
-        {id:'brand',     label:'Análisis de marca',   icon:'brand_awareness',desc:'Evalúa logo, colores e identidad visual'},
+        {id:'lumaprompt',label:'Video prompt perfecto', icon:'movie',        desc:'Arquitectura de prompts para vídeo IA'},
+        {id:'lumacam',  label:'Movimientos de cámara',  icon:'videocam',     desc:'Dolly, pan, zoom, orbital'},
+        {id:'lumaimg',  label:'Image to Video',         icon:'image',        desc:'Anima tu imagen con Luma'},
+        {id:'lumachar', label:'Coherencia de personaje',icon:'person',       desc:'Mantén el mismo personaje en escenas'},
+        {id:'lumashort',label:'Short Film Generator',   icon:'theaters',     desc:'Genera un cortometraje de 30s'},
       ]
     },
-    { id:'suno',      name:'Suno',           maker:'Suno AI',      color:'#EF4444', icon:'🎵', model:'claude',
-      desc:'IA de generación musical. Crea letras, acordes y estructuras de canciones.',
+    // ── Automatización ──────────────────────────────────────────────
+    { id:'n8n',         cat:'automation',name:'n8n',           maker:'n8n GmbH',        color:'#EA4B71', icon:'🔄',
+      repo:'n8n-io/n8n', stars:'50k+', lang:'TypeScript/Node.js',
+      desc:'El Zapier open source. Automatiza todo con 400+ integraciones, código y agentes IA.',
+      what:'n8n es la plataforma de automatización más potente del mundo open source. Conecta cualquier app, API o servicio con flujos visuales. Puede ejecutarse self-hosted y tiene agentes IA nativos.',
       tools:[
-        {id:'lyrics',    label:'Letra de canción',    icon:'music_note',  desc:'Letra completa con estrofas, estribillo y puente'},
-        {id:'chords',    label:'Acordes y arreglo',   icon:'piano',       desc:'Progresión de acordes + tablatura de guitarra'},
-        {id:'songstruct',label:'Estructura musical',  icon:'queue_music', desc:'Estructura A/B/C con intro, versos, coro y outro'},
-        {id:'lyrics2',   label:'Prompt para Suno',    icon:'auto_awesome',desc:'Prompt optimizado para generar música en Suno'},
-        {id:'genre',     label:'Análisis de género',  icon:'headphones',  desc:'Características musicales + subgéneros'},
-        {id:'collab',    label:'Colaboración musical',icon:'group',       desc:'Propuesta de colaboración con artistas afines'},
+        {id:'n8nstart', label:'Empezar con n8n',        icon:'play_circle',  desc:'Setup local o nube en 5 minutos'},
+        {id:'n8nflows', label:'Flows populares',        icon:'workflow',     desc:'Los 10 flujos más usados'},
+        {id:'n8nai',    label:'Agentes IA con n8n',     icon:'smart_toy',    desc:'Crea agentes con LLMs en n8n'},
+        {id:'n8nwebhk', label:'Webhooks y APIs',        icon:'api',          desc:'Recibe datos de cualquier app'},
+        {id:'n8ncron',  label:'Tareas programadas',     icon:'schedule',     desc:'Automatizaciones periódicas'},
+      ]
+    },
+    { id:'activepieces',cat:'automation',name:'Activepieces',  maker:'Activepieces',   color:'#7C3AED', icon:'🧩',
+      repo:'activepieces/activepieces', stars:'10k+', lang:'TypeScript',
+      desc:'Automatización no-code con 280+ integraciones. Alternativa open source a Make y Zapier.',
+      what:'Activepieces es una plataforma de automatización moderna con interfaz visual intuitiva. Tiene piezas (conectores) para todas las apps populares y permite crear flujos de trabajo sin código.',
+      tools:[
+        {id:'apinstall',label:'Instalar Activepieces',  icon:'download',     desc:'Docker setup en 2 minutos'},
+        {id:'apflows',  label:'Crear un flow',          icon:'schema',       desc:'Construye tu primer workflow'},
+        {id:'apai',     label:'IA en Activepieces',     icon:'smart_toy',    desc:'Conecta OpenAI, Claude o Llama'},
+        {id:'apcrm',    label:'CRM automation',         icon:'people',       desc:'Automatiza tu proceso de ventas'},
+        {id:'apnotify',label:'Notificaciones inteligentes',icon:'notifications',desc:'Alertas contextuales con IA'},
+      ]
+    },
+    { id:'automatisch', cat:'automation',name:'Automatisch',   maker:'Automatisch',    color:'#10B981', icon:'⚙️',
+      repo:'automatisch/automatisch', stars:'4k+', lang:'Node.js',
+      desc:'Alternativa open source a Zapier, 100% self-hosted, privado y gratis. Integraciones populares.',
+      what:'Automatisch permite crear automatizaciones entre apps populares sin código. Es como Zapier pero puedes instalarlo en tu propio servidor, manteniendo control total de tus datos.',
+      tools:[
+        {id:'autoinst',label:'Instalar Automatisch',    icon:'download',     desc:'Docker Compose en tu servidor'},
+        {id:'autoflow',label:'Crear automatización',    icon:'schema',       desc:'Conecta 2 apps con triggers'},
+        {id:'autogmail',label:'Gmail automático',       icon:'mail',         desc:'Procesa emails con reglas IA'},
+        {id:'autoslack',label:'Slack integration',      icon:'message',      desc:'Notificaciones y bots de Slack'},
+        {id:'autoapi',  label:'Custom API',             icon:'api',          desc:'Conecta cualquier API REST'},
+      ]
+    },
+    // ── Deploy & Cloud ──────────────────────────────────────────────
+    { id:'coolify',     cat:'deploy',  name:'Coolify',         maker:'Coolify',         color:'#6EE7B7', icon:'☁️',
+      repo:'coollabsio/coolify', stars:'24k+', lang:'PHP/Laravel',
+      desc:'Alternativa open source a Heroku, Vercel y Netlify. Despliega en tu propio servidor con 1 clic.',
+      what:'Coolify es una plataforma PaaS self-hosted que permite desplegar apps, databases, servicios y aplicaciones estáticas en cualquier VPS. Es como tener Heroku y Vercel en tu propio servidor.',
+      tools:[
+        {id:'cooinst',  label:'Instalar Coolify',       icon:'download',     desc:'En tu VPS con 1 comando'},
+        {id:'cooideploy',label:'Desplegar una app',     icon:'rocket_launch',desc:'Node, Python, PHP, Docker...'},
+        {id:'cooldb',   label:'Bases de datos',         icon:'storage',      desc:'PostgreSQL, MySQL, Redis, MongoDB'},
+        {id:'coolssl',  label:'SSL automático',         icon:'lock',         desc:'HTTPS con Let\'s Encrypt'},
+        {id:'coolci',   label:'CI/CD con GitHub',       icon:'commit',       desc:'Deploy automático desde Git'},
+      ]
+    },
+    { id:'dokploy',     cat:'deploy',  name:'Dokploy',         maker:'Dokploy',         color:'#3B82F6', icon:'🚀',
+      repo:'Dokploy/dokploy', stars:'10k+', lang:'TypeScript',
+      desc:'PaaS open source ultraligero. Despliega apps con Docker, Compose o Nixpacks. Como Vercel local.',
+      what:'Dokploy es una alternativa moderna a Coolify y Heroku, construida con TypeScript. Soporta Docker Compose, Nixpacks, bases de datos y tiene una UI muy intuitiva.',
+      tools:[
+        {id:'dokinstall',label:'Instalar Dokploy',     icon:'download',      desc:'Setup en 5 minutos en cualquier VPS'},
+        {id:'dokapp',   label:'Desplegar aplicación',  icon:'rocket_launch', desc:'Desde GitHub con auto-deploy'},
+        {id:'dokdocker',label:'Docker Compose',         icon:'layers',       desc:'Despliega cualquier stack Docker'},
+        {id:'dokdomain',label:'Dominios y SSL',         icon:'language',     desc:'Configura dominios con certificados'},
+        {id:'dokenv',   label:'Variables de entorno',   icon:'key',          desc:'Gestión segura de secrets'},
+      ]
+    },
+    { id:'caprover',    cat:'deploy',  name:'CapRover',        maker:'CapRover',        color:'#EF4444', icon:'⛵',
+      repo:'caprover/caprover', stars:'13k+', lang:'Node.js',
+      desc:'PaaS gratuito y open source. 100+ one-click apps. Git push deploy como Heroku.',
+      what:'CapRover es un PaaS maduro y gratuito que puedes instalar en cualquier servidor Ubuntu. Con un comando despliega cualquier app y tiene catálogo de 100+ aplicaciones one-click.',
+      tools:[
+        {id:'capinst',  label:'Instalar CapRover',      icon:'download',     desc:'En Ubuntu con Docker'},
+        {id:'capapp',   label:'One-click apps',         icon:'apps',         desc:'WordPress, Nextcloud, Ghost...'},
+        {id:'capdeploy',label:'Deploy con Git',         icon:'commit',       desc:'git push caprover master'},
+        {id:'capscale', label:'Escalado automático',    icon:'trending_up',  desc:'Réplicas y balanceo de carga'},
+        {id:'capnetlify',label:'Como Netlify',          icon:'language',     desc:'Hosting de sitios estáticos'},
+      ]
+    },
+    // ── Diseño & UI ──────────────────────────────────────────────
+    { id:'penpot',      cat:'design',  name:'Penpot',          maker:'Kaleidos',        color:'#7C3AED', icon:'✏️',
+      repo:'penpot/penpot', stars:'33k+', lang:'Clojure/ClojureScript',
+      desc:'Figma open source. Diseño de interfaz colaborativo self-hosted. SVG nativo, plugins.',
+      what:'Penpot es la alternativa open source a Figma. Permite diseñar interfaces, prototipos y assets de forma colaborativa. 100% basado en estándares web (SVG/CSS) y self-hosteable.',
+      tools:[
+        {id:'penstart',label:'Empezar con Penpot',      icon:'design_services',desc:'Crea tu primer diseño en Penpot'},
+        {id:'penuikit',label:'UI Kit completo',          icon:'widgets',      desc:'Diseña un design system completo'},
+        {id:'penproto',label:'Prototipo interactivo',    icon:'touch_app',    desc:'Añade interacciones y transiciones'},
+        {id:'pencomp', label:'Componentes y tokens',     icon:'layers',       desc:'Design tokens y componentes reutilizables'},
+        {id:'penai',   label:'Penpot + IA',             icon:'auto_awesome', desc:'Genera componentes con IA'},
+      ]
+    },
+    { id:'gradio',      cat:'design',  name:'Gradio',          maker:'Hugging Face',    color:'#F59E0B', icon:'🎛️',
+      repo:'gradio-app/gradio', stars:'34k+', lang:'Python',
+      desc:'Crea interfaces web para modelos de IA con solo Python. Deploy en Hugging Face Spaces gratis.',
+      what:'Gradio permite crear demos web interactivas para modelos ML con muy poco código. Es la forma más rápida de hacer que tu modelo de IA sea accesible al público.',
+      tools:[
+        {id:'gradbasic', label:'Primera demo Gradio',   icon:'play_circle',  desc:'Interface IA en 10 líneas Python'},
+        {id:'gradchat',  label:'Chatbot UI',            icon:'chat',         desc:'Interface de chat personalizada'},
+        {id:'gradimg',   label:'Imagen IA demo',        icon:'image',        desc:'Demo de generación de imágenes'},
+        {id:'gradfull',  label:'Blocks avanzados',      icon:'grid_view',    desc:'UI compleja con múltiples componentes'},
+        {id:'gradspace', label:'Deploy en Spaces',      icon:'cloud_upload', desc:'Publica gratis en HuggingFace'},
+      ]
+    },
+    { id:'presenton',   cat:'design',  name:'Presenton',       maker:'Presenton',       color:'#E91E63', icon:'📊',
+      repo:'presenton/presenton', stars:'2k+', lang:'Python/React',
+      desc:'Generador de presentaciones IA open source. Alternativa a Gamma.app y Beautiful.ai gratis.',
+      what:'Presenton genera presentaciones profesionales desde texto usando IA. Es open source y puede auto-hospedarse, siendo alternativa directa a Gamma.app y Beautiful.ai.',
+      tools:[
+        {id:'presgen',  label:'Generar presentación',   icon:'slideshow',    desc:'PPT desde un prompt en segundos'},
+        {id:'prestheme',label:'Temas y estilos',        icon:'style',        desc:'Personaliza el diseño visual'},
+        {id:'presexport',label:'Exportar PPTX',         icon:'download',     desc:'PowerPoint editable listo'},
+        {id:'presdeck', label:'Pitch Deck IA',          icon:'bar_chart',    desc:'Deck de inversión profesional'},
+        {id:'prescolab',label:'Colaboración',           icon:'group',        desc:'Edición colaborativa en tiempo real'},
+      ]
+    },
+    // ── Datos & RAG ──────────────────────────────────────────────
+    { id:'langchain',   cat:'data',   name:'LangChain',        maker:'LangChain AI',    color:'#1C7C54', icon:'🔗',
+      repo:'langchain-ai/langchain', stars:'93k+', lang:'Python/TypeScript',
+      desc:'El framework más popular para construir aplicaciones LLM. RAG, Agents, Chains y más.',
+      what:'LangChain es el framework estándar para construir apps con LLMs. Permite crear cadenas de procesamiento, agentes autónomos, RAG con cualquier LLM y fuente de datos.',
+      tools:[
+        {id:'lcrag',    label:'RAG con LangChain',      icon:'search',       desc:'Chatea con documentos locales'},
+        {id:'lcagent',  label:'Agente LangChain',       icon:'smart_toy',    desc:'Crea un agente con herramientas'},
+        {id:'lcchain',  label:'Custom Chain',           icon:'hub',          desc:'Encadena prompts y modelos'},
+        {id:'lcchatbot',label:'Chatbot con memoria',    icon:'chat',         desc:'Chatbot con contexto persistente'},
+        {id:'lcvect',   label:'Vector store',           icon:'storage',      desc:'Embeddings con ChromaDB/Pinecone'},
+      ]
+    },
+    { id:'chromadb',    cat:'data',   name:'ChromaDB',         maker:'Chroma',          color:'#FF6B6B', icon:'🎨',
+      repo:'chroma-core/chroma', stars:'15k+', lang:'Python',
+      desc:'La base de datos vectorial open source más fácil de usar para RAG y búsqueda semántica.',
+      what:'ChromaDB almacena embeddings de texto o imágenes y permite búsqueda semántica ultrarrápida. Es la forma más sencilla de añadir "memoria" a tu aplicación LLM.',
+      tools:[
+        {id:'chromasetup',label:'Setup ChromaDB',       icon:'download',     desc:'Persistente local o servidor'},
+        {id:'chromaingest',label:'Ingestar documentos', icon:'upload_file',  desc:'PDFs, HTML, texto a vectores'},
+        {id:'chromasearch',label:'Búsqueda semántica',  icon:'search',       desc:'Encuentra documentos por significado'},
+        {id:'chromarag',label:'RAG completo',           icon:'auto_stories', desc:'Chatbot con conocimiento propio'},
+        {id:'chromaemb',label:'Embeddings locales',     icon:'hub',          desc:'Usa Ollama sin API externa'},
+      ]
+    },
+    { id:'ollama',      cat:'data',   name:'Ollama',           maker:'Ollama',          color:'#1F2937', icon:'🦙',
+      repo:'ollama/ollama', stars:'90k+', lang:'Go',
+      desc:'Ejecuta Llama, Mistral, Gemma, Qwen y 100+ modelos en tu computadora. Ultra fácil.',
+      what:'Ollama es la forma más fácil de ejecutar modelos LLM localmente. Un solo comando descarga y ejecuta cualquier modelo. Tiene API compatible con OpenAI para integrar con cualquier app.',
+      tools:[
+        {id:'ollamarun', label:'Instalar Ollama',       icon:'download',     desc:'Un comando en Mac, Linux o Windows'},
+        {id:'ollamamod', label:'Modelos populares',     icon:'model_training',desc:'Llama 3, Mistral, Gemma, Qwen...'},
+        {id:'ollamaapi', label:'Ollama API',            icon:'api',          desc:'Integra con VS Code, n8n, LangChain'},
+        {id:'ollamacust',label:'Modelfile custom',      icon:'tune',         desc:'Crea tu propio asistente personalizado'},
+        {id:'ollamaperf',label:'Optimizar rendimiento', icon:'speed',        desc:'GPU, cuantización, contexto'},
+      ]
+    },
+    // ── Voz & Audio ──────────────────────────────────────────────
+    { id:'whisper',     cat:'voice',  name:'Whisper',          maker:'OpenAI',          color:'#10A37F', icon:'🎤',
+      repo:'openai/whisper', stars:'73k+', lang:'Python',
+      desc:'El mejor STT (Speech-to-Text) open source. Transcribe audio en 99 idiomas con precisión.',
+      what:'Whisper de OpenAI es el modelo de reconocimiento de voz más preciso disponible open source. Transcribe audio, detecta idioma automáticamente y puede subtitular vídeos.',
+      tools:[
+        {id:'whisprinst',label:'Instalar Whisper',      icon:'download',     desc:'pip install openai-whisper'},
+        {id:'whisprtrans',label:'Transcribir audio',    icon:'mic',          desc:'MP3, WAV, M4A, MP4 → texto'},
+        {id:'whisprsubt',label:'Subtítulos automáticos',icon:'subtitles',    desc:'Genera SRT y VTT para vídeos'},
+        {id:'whisprtransl',label:'Traducción STT',      icon:'translate',    desc:'Transcribe y traduce al inglés'},
+        {id:'whisprbatch',label:'Batch processing',     icon:'batch_prediction',desc:'Transcribe múltiples archivos'},
+      ]
+    },
+    { id:'coquitts',    cat:'voice',  name:'Coqui TTS',        maker:'Coqui AI',        color:'#F59E0B', icon:'🗣️',
+      repo:'coqui-ai/TTS', stars:'34k+', lang:'Python',
+      desc:'TTS open source más avanzado. Voces realistas, clonación de voz, zero-shot TTS.',
+      what:'Coqui TTS ofrece síntesis de voz de alta calidad con múltiples modelos incluyendo XTTS-v2 que puede clonar voces con solo 3 segundos de audio de referencia.',
+      tools:[
+        {id:'coquiinst',label:'Instalar Coqui TTS',     icon:'download',     desc:'pip install TTS'},
+        {id:'coquigen', label:'Generar voz',            icon:'volume_up',    desc:'Texto a voz en múltiples idiomas'},
+        {id:'coquiclone',label:'Clonación de voz',      icon:'record_voice_over',desc:'Clona cualquier voz en segundos'},
+        {id:'coquimulti',label:'Múltiples speakers',    icon:'group',        desc:'Diálogos con voces distintas'},
+        {id:'coquiapi', label:'API REST',               icon:'api',          desc:'Integra TTS en tu aplicación'},
+      ]
+    },
+    // ── Educación & Productividad ──────────────────────────────────
+    { id:'learnanything',cat:'edu',   name:'Learn Anything',   maker:'Learn Anything',  color:'#6366F1', icon:'🎓',
+      repo:'nicholasgasior/learn-anything', stars:'15k+', lang:'TypeScript',
+      desc:'Mapas de conocimiento interactivos open source. Aprende cualquier tema de forma visual.',
+      what:'Learn Anything crea mapas mentales interactivos de conocimiento para aprender cualquier tema. Los mapas son mantenidos por la comunidad y se enlazan con los mejores recursos gratuitos.',
+      tools:[
+        {id:'lamap',    label:'Mapa de aprendizaje',    icon:'account_tree', desc:'Ruta de aprendizaje visual'},
+        {id:'lapath',   label:'Learning path',          icon:'route',        desc:'Crea tu ruta de estudio IA'},
+        {id:'laresources',label:'Mejores recursos',     icon:'bookmark',     desc:'Libros, cursos y tutoriales top'},
+        {id:'lacurate', label:'Curar conocimiento',     icon:'star',         desc:'Añade y organiza recursos'},
+        {id:'lacollect',label:'Colecciones',            icon:'collections',  desc:'Organiza por tema y dificultad'},
+      ]
+    },
+    { id:'anki',        cat:'edu',    name:'Anki / Mochi',     maker:'Damien Elmes',    color:'#4F46E5', icon:'🃏',
+      repo:'ankitects/anki', stars:'18k+', lang:'Rust/Python',
+      desc:'El sistema de flashcards más efectivo del mundo. Algoritmo SM2 de repetición espaciada.',
+      what:'Anki usa el algoritmo de repetición espaciada para maximizar la retención de memoria. Es el estándar de oro para aprender idiomas, medicina y cualquier material memorizable.',
+      tools:[
+        {id:'ankicreate',label:'Crear deck con IA',     icon:'auto_awesome', desc:'Genera flashcards automáticamente'},
+        {id:'ankicloze', label:'Cloze deletion',        icon:'edit',         desc:'Técnica de relleno de huecos'},
+        {id:'ankiimage', label:'Image occlusion',       icon:'image',        desc:'Aprende anatomía y diagramas'},
+        {id:'ankiexport',label:'Exportar deck',         icon:'download',     desc:'Comparte tu deck como .apkg'},
+        {id:'ankiapi',   label:'AnkiConnect API',       icon:'api',          desc:'Automatiza la creación de tarjetas'},
+      ]
+    },
+    { id:'obsidian',    cat:'edu',    name:'Obsidian',         maker:'Obsidian',        color:'#7C3AED', icon:'💎',
+      repo:'obsidianmd/obsidian-releases', stars:'9k+', lang:'TypeScript',
+      desc:'La aplicación de notas personal más poderosa. Graph view, plugins IA y segundo cerebro.',
+      what:'Obsidian es una aplicación de notas basada en Markdown que almacena todo localmente. Con plugins como Smart Connections puedes conectar IA a tus notas y construir un segundo cerebro.',
+      tools:[
+        {id:'obssecbra', label:'Segundo cerebro setup',icon:'psychology',   desc:'Sistema PKM personal completo'},
+        {id:'obsai',     label:'IA en Obsidian',        icon:'smart_toy',   desc:'Smart Connections con LLMs locales'},
+        {id:'obsgraph',  label:'Knowledge graph',       icon:'hub',         desc:'Visualiza conexiones entre notas'},
+        {id:'obsdaily',  label:'Daily notes workflow',  icon:'calendar_today',desc:'Sistema de notas diarias'},
+        {id:'obsplugin', label:'Plugins esenciales',    icon:'extension',   desc:'Los 20 mejores plugins IA'},
+      ]
+    },
+    { id:'tabbyml',     cat:'code',   name:'Tabby',            maker:'TabbyML',         color:'#F59E0B', icon:'🐱',
+      repo:'TabbyML/tabby', stars:'21k+', lang:'Rust/Python',
+      desc:'GitHub Copilot open source self-hosted. Autocompletado de código en tu servidor.',
+      what:'Tabby es una alternativa open source a GitHub Copilot que puedes alojar en tu propia infraestructura. Soporta VS Code, JetBrains y Neovim con autocompletado inteligente.',
+      tools:[
+        {id:'tabbyinst',label:'Instalar Tabby',         icon:'download',     desc:'Docker o binario en tu servidor'},
+        {id:'tabbyide',label:'Extensión IDE',            icon:'extension',   desc:'VS Code, JetBrains, Neovim'},
+        {id:'tabbymodel',label:'Modelos de código',     icon:'model_training',desc:'StarCoder, DeepSeek-Coder'},
+        {id:'tabbychat',label:'Chat en IDE',            icon:'chat',         desc:'Pregunta sobre tu código en el editor'},
+        {id:'tabbyteam',label:'Despliegue en equipo',   icon:'group',        desc:'Copilot privado para toda la empresa'},
+      ]
+    },
+    { id:'langflow',    cat:'data',   name:'Langflow',         maker:'DataStax',        color:'#EC4899', icon:'🌊',
+      repo:'langflow-ai/langflow', stars:'35k+', lang:'Python/React',
+      desc:'Constructor visual de flujos LLM/IA con drag & drop. Como n8n pero especialmente para IA.',
+      what:'Langflow permite construir pipelines de IA con una interfaz visual de arrastrar y soltar. Conecta LLMs, bases de datos vectoriales, herramientas y APIs sin código.',
+      tools:[
+        {id:'lfinstall', label:'Instalar Langflow',      icon:'download',     desc:'pip install langflow'},
+        {id:'lfrag',     label:'RAG visual',             icon:'search',       desc:'Crea un pipeline RAG visualmente'},
+        {id:'lfagent',   label:'Agente visual',          icon:'smart_toy',    desc:'Construye agentes con tools'},
+        {id:'lfapi',     label:'Exponer como API',       icon:'api',          desc:'Convierte tu flow en endpoint'},
+        {id:'lftemplat', label:'Templates de flow',      icon:'grid_view',    desc:'RAG, chat, agents listos'},
+      ]
+    },
+    { id:'crewai',      cat:'automation',name:'CrewAI',         maker:'João Moura',     color:'#DC2626', icon:'🤝',
+      repo:'crewAIInc/crewAI', stars:'28k+', lang:'Python',
+      desc:'Framework para crear equipos de agentes IA colaborativos. Multi-agent systems open source.',
+      what:'CrewAI permite crear equipos de agentes IA especializados que colaboran para resolver tareas complejas. Cada agente tiene un rol, objetivos y herramientas específicas.',
+      tools:[
+        {id:'crewbasic',label:'Crear tu primer crew',   icon:'group',        desc:'Equipo simple de 2 agentes'},
+        {id:'crewtools',label:'Tools y acciones',       icon:'build',        desc:'Búsqueda web, código, APIs'},
+        {id:'crewflow', label:'Crews en paralelo',      icon:'account_tree', desc:'Flujos paralelos y secuenciales'},
+        {id:'crewlarge',label:'Crew empresarial',       icon:'business',     desc:'Orquesta 10+ agentes especializados'},
+        {id:'crewlocal',label:'Crews con LLMs locales', icon:'computer',     desc:'CrewAI + Ollama sin API keys'},
+      ]
+    },
+    { id:'voideditor',  cat:'code',   name:'Void Editor',      maker:'Void',            color:'#1E293B', icon:'🌑',
+      repo:'voideditor/void', stars:'12k+', lang:'TypeScript',
+      desc:'Editor de código open source con IA integrada. Alternativa a Cursor con soporte local.',
+      what:'Void es un fork de VS Code con capacidades de IA integradas de forma nativa. Soporta cualquier LLM local u online, permite checkpoint de ediciones y tiene agente de código.',
+      tools:[
+        {id:'voidinst',label:'Instalar Void Editor',    icon:'download',     desc:'Descarga y setup inicial'},
+        {id:'voidmodel',label:'Conectar modelo',        icon:'settings',     desc:'Ollama, OpenAI, Anthropic...'},
+        {id:'voidagent',label:'Void Agent',             icon:'smart_toy',    desc:'Agente que modifica código'},
+        {id:'voidinline',label:'Inline AI',             icon:'edit',         desc:'Selecciona y pide cambios'},
+        {id:'voidcheck',label:'Checkpoints',            icon:'restore',      desc:'Revierte cambios de IA'},
       ]
     },
   ],
 
-  render(){
-    const el=document.getElementById('main-content');
-    el.innerHTML=`<div class="page-enter" style="padding-bottom:100px">
-      <div style="background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);padding:40px 24px 32px;position:relative;overflow:hidden">
-        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(124,58,237,.3),transparent 60%),radial-gradient(ellipse at 80% 50%,rgba(66,133,244,.3),transparent 60%);pointer-events:none"></div>
-        <div style="max-width:900px;margin:0 auto;position:relative">
-          <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:5px 14px;border-radius:100px;font-size:11px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px">
+  render() {
+    const el = document.getElementById('main-content');
+    const filtered = this._activeCategory === 'all'
+      ? this.platforms
+      : this.platforms.filter(p => p.cat === this._activeCategory);
+
+    el.innerHTML = `<div class="page-enter" style="padding-bottom:100px">
+      <!-- Hero header -->
+      <div style="background:linear-gradient(135deg,#050c1f,#0d1a35,#0a0a1a);padding:40px 24px 32px;position:relative;overflow:hidden">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 15% 50%,rgba(99,102,241,.2),transparent 60%),radial-gradient(ellipse at 85% 30%,rgba(16,185,129,.15),transparent 60%);pointer-events:none"></div>
+        <div style="max-width:1100px;margin:0 auto;position:relative">
+          <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.3);padding:5px 14px;border-radius:100px;font-size:11px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px">
             <span style="width:6px;height:6px;border-radius:50%;background:#4ADE80;display:inline-block;animation:aihub-pulse 2s infinite"></span>
-            16 Plataformas IA · 100% Funcional · Sin API keys
+            ${this.platforms.length} IAs Open Source · 100% Gratis · Self-Hosted
           </div>
-          <h1 style="font-size:clamp(28px,5vw,48px);font-weight:900;color:white;font-family:var(--md-font-display);margin-bottom:12px;line-height:1.1"><span class="material-symbols-rounded" style="font-size:32px;vertical-align:-3px;color:white">hub</span> Hub de IAs</h1>
-          <p style="font-size:15px;color:rgba(255,255,255,.7);max-width:560px;line-height:1.6">Claude, Gamma, Genspark, Manus, Gemini, ChatGPT, DeepSeek, Perplexity, Nano Banana, Sora, Copilot, Android Studio, Grok, Knowunity, Astra AI y Suno — todo en un solo lugar.</p>
+          <h1 style="font-size:clamp(28px,5vw,48px);font-weight:900;color:white;font-family:var(--md-font-display);margin-bottom:12px;line-height:1.1">
+            <span class="material-symbols-rounded" style="font-size:36px;vertical-align:-5px;color:#6366F1">hub</span>
+            Open Source AI Hub
+          </h1>
+          <p style="font-size:15px;color:rgba(255,255,255,.65);max-width:700px;line-height:1.6;margin-bottom:24px">
+            Todas las IAs open source del mundo en un solo lugar. Llama, Qwen, DeepSeek, Flux, n8n, Coolify, Open WebUI, LangChain y 40+ más. Aprende a usarlas, instalarlas y construir con ellas.
+          </p>
+          <!-- Stats -->
+          <div style="display:flex;gap:20px;flex-wrap:wrap">
+            ${[{v:this.platforms.length+'+',l:'IAs Open Source'},{v:'100%',l:'Gratis & self-hosted'},{v:'0€',l:'Sin API keys'},{v:'∞',l:'Posibilidades'}].map(s=>`
+            <div style="text-align:center">
+              <div style="font-size:24px;font-weight:800;color:white;font-family:var(--md-font-display)">${s.v}</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:600">${s.l}</div>
+            </div>`).join('')}
+          </div>
         </div>
       </div>
+
+      <!-- Category filter -->
+      <div style="background:var(--md-surface-container-low);border-bottom:1px solid var(--md-outline-variant);padding:12px 24px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
+        <div style="max-width:1100px;margin:0 auto;display:inline-flex;gap:6px">
+          ${this.categories.map(c=>`
+          <button onclick="AIHub._activeCategory='${c.id}';AIHub.render()" style="display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:100px;border:1.5px solid ${this._activeCategory===c.id?'var(--md-primary)':'var(--md-outline-variant)'};background:${this._activeCategory===c.id?'var(--md-primary-container)':'transparent'};color:${this._activeCategory===c.id?'var(--md-primary)':'var(--md-on-surface-variant)'};cursor:pointer;font-size:12px;font-weight:600;white-space:nowrap;transition:all .15s">
+            <span class="material-symbols-rounded" style="font-size:14px">${c.icon}</span>${c.label}
+            ${c.id!=='all'?`<span style="background:${this._activeCategory===c.id?'var(--md-primary)':'var(--md-outline-variant)'};color:${this._activeCategory===c.id?'white':'var(--md-on-surface)'};font-size:10px;padding:1px 5px;border-radius:100px">${this.platforms.filter(p=>p.cat===c.id).length}</span>`:''}
+          </button>`).join('')}
+        </div>
+      </div>
+
+      <!-- Grid -->
       <div style="max-width:1100px;margin:0 auto;padding:24px 16px 0">
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px" id="aihub-grid">
-          ${this.platforms.map(p=>this._card(p)).join('')}
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px">
+          ${filtered.map(p => this._card(p)).join('')}
         </div>
       </div>
     </div>`;
-    setTimeout(()=>document.querySelectorAll('.aihub-card').forEach((c,i)=>setTimeout(()=>c.classList.add('visible'),i*40)),60);
+
+    setTimeout(() => document.querySelectorAll('.aihub-card').forEach((c, i) => setTimeout(() => c.classList.add('visible'), i * 30)), 60);
   },
 
-  _card(p){
+  _card(p) {
     return `<div class="aihub-card" onclick="AIHub.openPlatform('${p.id}')" style="background:var(--md-surface-container-low);border:1px solid var(--md-outline-variant);border-radius:20px;padding:20px;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .25s cubic-bezier(.2,0,0,1);position:relative;overflow:hidden">
       <div style="position:absolute;top:0;left:0;right:0;height:3px;background:${p.color}"></div>
-      <div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:12px">
-        <div style="width:48px;height:48px;border-radius:14px;background:${p.color}18;border:1px solid ${p.color}40;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0">${p.icon}</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+        <div style="width:46px;height:46px;border-radius:12px;background:${p.color}18;border:1px solid ${p.color}40;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">${p.icon}</div>
         <div style="flex:1;min-width:0">
-          <div style="font-size:16px;font-weight:800;color:var(--md-on-surface)">${p.name}</div>
+          <div style="font-size:15px;font-weight:800;color:var(--md-on-surface)">${p.name}</div>
           <div style="font-size:11px;color:${p.color};font-weight:600">${p.maker}</div>
         </div>
-        <span style="font-size:10px;padding:3px 8px;border-radius:100px;background:${p.color}18;color:${p.color};font-weight:700;flex-shrink:0">${p.tools.length} tools</span>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0">
+          <span style="font-size:9px;padding:2px 7px;border-radius:100px;background:${p.color}18;color:${p.color};font-weight:700">⭐ ${p.stars}</span>
+          <span style="font-size:9px;padding:2px 7px;border-radius:100px;background:var(--md-surface-container);color:var(--md-on-surface-variant);font-weight:600">${p.lang}</span>
+        </div>
       </div>
-      <p style="font-size:12px;color:var(--md-on-surface-variant);line-height:1.5;margin-bottom:12px">${p.desc}</p>
-      <div style="display:flex;flex-wrap:wrap;gap:5px">${p.tools.slice(0,4).map(t=>`<span style="font-size:10px;padding:3px 8px;border-radius:6px;background:var(--md-surface-container);color:var(--md-on-surface-variant);border:1px solid var(--md-outline-variant)">${t.label}</span>`).join('')}${p.tools.length>4?`<span style="font-size:10px;padding:3px 8px;border-radius:6px;background:${p.color}12;color:${p.color};font-weight:600">+${p.tools.length-4}</span>`:''}</div>
+      <p style="font-size:12px;color:var(--md-on-surface-variant);line-height:1.55;margin-bottom:12px">${p.desc}</p>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;flex-wrap:wrap;gap:4px">${p.tools.slice(0, 3).map(t=>`<span style="font-size:10px;padding:2px 7px;border-radius:5px;background:var(--md-surface-container);color:var(--md-on-surface-variant);border:1px solid var(--md-outline-variant)">${t.label}</span>`).join('')}${p.tools.length>3?`<span style="font-size:10px;padding:2px 7px;border-radius:5px;background:${p.color}12;color:${p.color};font-weight:600">+${p.tools.length-3}</span>`:''}</div>
+        <span class="material-symbols-rounded" style="font-size:16px;color:var(--md-on-surface-variant)">arrow_forward</span>
+      </div>
     </div>`;
   },
 
-  openPlatform(id){
-    const p=this.platforms.find(x=>x.id===id);
-    if(!p) return;
-    this._active=p;
-    this._activeTool=null;
-    this._activeToolBtnId=null;
-    const el=document.getElementById('main-content');
-    el.innerHTML=`<div class="page-enter" style="padding-bottom:80px">
-      <div style="background:linear-gradient(135deg,${p.color}22,var(--md-surface-container));padding:24px 20px 20px;border-bottom:1px solid var(--md-outline-variant)">
-        <div style="max-width:900px;margin:0 auto">
-          <button onclick="AIHub.render()" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:100px;background:var(--md-surface-container);border:1px solid var(--md-outline-variant);cursor:pointer;color:var(--md-on-surface-variant);font-size:12px;margin-bottom:16px"><span class="material-symbols-rounded" style="font-size:16px">arrow_back</span>IA Hub</button>
-          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-            <div style="width:64px;height:64px;border-radius:18px;background:${p.color}18;border:2px solid ${p.color}40;display:flex;align-items:center;justify-content:center;font-size:32px;flex-shrink:0">${p.icon}</div>
-            <div><div style="font-size:24px;font-weight:900;color:var(--md-on-surface)">${p.name}</div>
-            <div style="font-size:13px;color:${p.color};font-weight:600">${p.maker} · ${p.tools.length} herramientas</div>
-            <p style="font-size:13px;color:var(--md-on-surface-variant);margin-top:4px">${p.desc}</p></div>
+  openPlatform(id) {
+    const p = this.platforms.find(x => x.id === id);
+    if (!p) return;
+    this._active = p;
+    this._activeTool = null;
+    this._activeToolBtnId = null;
+    const el = document.getElementById('main-content');
+    el.innerHTML = `<div class="page-enter" style="padding-bottom:80px">
+      <div style="background:linear-gradient(135deg,${p.color}18,var(--md-surface-container));padding:24px 20px 20px;border-bottom:1px solid var(--md-outline-variant)">
+        <div style="max-width:960px;margin:0 auto">
+          <button onclick="AIHub.render()" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:100px;background:var(--md-surface-container);border:1px solid var(--md-outline-variant);cursor:pointer;color:var(--md-on-surface-variant);font-size:12px;margin-bottom:16px">
+            <span class="material-symbols-rounded" style="font-size:16px">arrow_back</span>Open Source Hub
+          </button>
+          <div style="display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap">
+            <div style="width:72px;height:72px;border-radius:18px;background:${p.color}18;border:2px solid ${p.color}40;display:flex;align-items:center;justify-content:center;font-size:36px;flex-shrink:0">${p.icon}</div>
+            <div style="flex:1;min-width:200px">
+              <div style="font-size:26px;font-weight:900;color:var(--md-on-surface)">${p.name}</div>
+              <div style="font-size:13px;color:${p.color};font-weight:700;margin-bottom:4px">${p.maker} · ⭐ ${p.stars} · ${p.lang}</div>
+              <p style="font-size:13px;color:var(--md-on-surface-variant);max-width:600px;line-height:1.6;margin-bottom:10px">${p.what}</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <a href="https://github.com/${p.repo}" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:100px;background:var(--md-surface-container);border:1px solid var(--md-outline-variant);color:var(--md-on-surface);text-decoration:none;font-size:12px;font-weight:600">
+                  <span class="material-symbols-rounded" style="font-size:15px">open_in_new</span>GitHub
+                </a>
+                <span style="display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:100px;background:${p.color}15;color:${p.color};font-size:11px;font-weight:700;border:1px solid ${p.color}30">
+                  🔓 100% Open Source
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div style="max-width:900px;margin:0 auto;padding:20px 16px">
+      <div style="max-width:960px;margin:0 auto;padding:20px 16px">
         <div style="display:grid;grid-template-columns:220px 1fr;gap:16px" class="st-layout">
           <div>
             <div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--md-on-surface-variant);text-transform:uppercase;margin-bottom:10px">Herramientas</div>
-            ${p.tools.map(t=>`<button id="aht-${p.id}-${t.id}" onclick="AIHub.selectTool('${id}','${t.id}')" style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;border:none;background:transparent;cursor:pointer;width:100%;text-align:left;color:var(--md-on-surface);transition:background .15s;margin-bottom:4px" onmouseover="if(AIHub._activeToolBtnId!=='aht-${p.id}-${t.id}')this.style.background='var(--md-surface-container)'" onmouseout="if(AIHub._activeToolBtnId!=='aht-${p.id}-${t.id}')this.style.background='transparent'">
-              <span class="material-symbols-rounded" style="font-size:18px;color:${p.color}">${t.icon}</span>
-              <div><div style="font-size:13px;font-weight:600">${t.label}</div><div style="font-size:10px;color:var(--md-on-surface-variant);line-height:1.3">${t.desc}</div></div>
+            ${p.tools.map(t=>`<button id="aht-${p.id}-${t.id}" onclick="AIHub.selectTool('${id}','${t.id}')"
+              style="display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:12px;border:none;background:transparent;cursor:pointer;width:100%;text-align:left;color:var(--md-on-surface);transition:background .15s;margin-bottom:4px"
+              onmouseover="if(AIHub._activeToolBtnId!=='aht-${p.id}-${t.id}')this.style.background='var(--md-surface-container)'"
+              onmouseout="if(AIHub._activeToolBtnId!=='aht-${p.id}-${t.id}')this.style.background='transparent'">
+              <span class="material-symbols-rounded" style="font-size:18px;color:${p.color};flex-shrink:0;margin-top:1px">${t.icon}</span>
+              <div><div style="font-size:13px;font-weight:600">${t.label}</div><div style="font-size:10px;color:var(--md-on-surface-variant);line-height:1.3;margin-top:2px">${t.desc}</div></div>
             </button>`).join('')}
           </div>
           <div>
@@ -12518,464 +13413,138 @@ const AIHub = {
     </div>`;
   },
 
-  selectTool(platformId,toolId){
-    const p=this.platforms.find(x=>x.id===platformId);
-    if(!p) return;
-    const t=p.tools.find(x=>x.id===toolId);
-    if(!t) return;
-    if(this._activeToolBtnId){
-      const old=document.getElementById(this._activeToolBtnId);
-      if(old){old.style.background='transparent';}
+  selectTool(platformId, toolId) {
+    const p = this.platforms.find(x => x.id === platformId);
+    if (!p) return;
+    const t = p.tools.find(x => x.id === toolId);
+    if (!t) return;
+    if (this._activeToolBtnId) {
+      const old = document.getElementById(this._activeToolBtnId);
+      if (old) old.style.background = 'transparent';
     }
-    this._activeToolBtnId='aht-'+platformId+'-'+toolId;
-    const btn=document.getElementById(this._activeToolBtnId);
-    if(btn) btn.style.background=p.color+'22';
-    this._activeTool=t;
-    const ws=document.getElementById('aihub-workspace');
-    if(!ws) return;
-    ws.style.textAlign='left';
-    ws.style.alignItems='stretch';
-    ws.style.justifyContent='flex-start';
-    const extra=this._getExtraInputs(platformId,toolId,p.color);
-    ws.innerHTML=`
+    this._activeToolBtnId = 'aht-' + platformId + '-' + toolId;
+    const btn = document.getElementById(this._activeToolBtnId);
+    if (btn) btn.style.background = p.color + '22';
+    this._activeTool = t;
+    const ws = document.getElementById('aihub-workspace');
+    if (!ws) return;
+    ws.style.textAlign = 'left';
+    ws.style.alignItems = 'stretch';
+    ws.style.justifyContent = 'flex-start';
+    ws.innerHTML = `
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
-        <div style="width:36px;height:36px;border-radius:10px;background:${p.color}20;display:flex;align-items:center;justify-content:center"><span class="material-symbols-rounded" style="font-size:18px;color:${p.color}">${t.icon}</span></div>
-        <div><div style="font-size:15px;font-weight:700;color:var(--md-on-surface)">${t.label}</div><div style="font-size:11px;color:${p.color}">${p.name} · ${p.maker}</div></div>
+        <div style="width:36px;height:36px;border-radius:10px;background:${p.color}20;display:flex;align-items:center;justify-content:center">
+          <span class="material-symbols-rounded" style="font-size:18px;color:${p.color}">${t.icon}</span>
+        </div>
+        <div>
+          <div style="font-size:15px;font-weight:700;color:var(--md-on-surface)">${t.label}</div>
+          <div style="font-size:11px;color:${p.color}">${p.name} · Open Source</div>
+        </div>
       </div>
-      <textarea id="aihub-input" rows="4" placeholder="${this._getPlaceholder(platformId,toolId)}" style="width:100%;padding:12px;border:1.5px solid var(--md-outline-variant);border-radius:12px;background:var(--md-surface-container-high);color:var(--md-on-surface);font-size:14px;font-family:var(--md-font-body);resize:vertical;outline:none;margin-bottom:10px;box-sizing:border-box;line-height:1.6;transition:border-color .2s" onfocus="this.style.borderColor='${p.color}'" onblur="this.style.borderColor='var(--md-outline-variant)'"></textarea>
-      ${extra}
-      <button onclick="AIHub.generate('${platformId}','${toolId}')" style="padding:11px 24px;border-radius:100px;background:${p.color};color:white;font-weight:800;border:none;cursor:pointer;font-size:14px;display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;transition:opacity .15s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+      <textarea id="aihub-input" rows="4" placeholder="Describe tu caso de uso, pregunta o proyecto..."
+        style="width:100%;padding:12px;border:1.5px solid var(--md-outline-variant);border-radius:12px;background:var(--md-surface-container-high);color:var(--md-on-surface);font-size:14px;font-family:var(--md-font-body);resize:vertical;outline:none;margin-bottom:10px;box-sizing:border-box;line-height:1.6;transition:border-color .2s"
+        onfocus="this.style.borderColor='${p.color}'" onblur="this.style.borderColor='var(--md-outline-variant)'"></textarea>
+      <button onclick="AIHub.generate('${platformId}','${toolId}')"
+        style="padding:11px 24px;border-radius:100px;background:${p.color};color:white;font-weight:800;border:none;cursor:pointer;font-size:14px;display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;transition:opacity .15s"
+        onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
         <span class="material-symbols-rounded">auto_awesome</span>Generar con ${p.name}
       </button>
-      <div id="aihub-result" style="display:none"></div>
-    `;
+      <div id="aihub-result" style="display:none"></div>`;
   },
 
-  _getPlaceholder(pid,tid){
-    const m={
-      'claude:review':'Pega aquí el código que quieres revisar...',
-      'claude:doc':'Pega el texto del documento a analizar...',
-      'claude:essay':'Escribe el tema del ensayo (ej: "El impacto de la IA en el empleo")...',
-      'claude:think':'¿Sobre qué tema quieres reflexionar críticamente?',
-      'claude:email':'Describe el propósito y contexto del email...',
-      'claude:debate':'¿Qué posición o tema quieres debatir?',
-      'gamma:pres':'Escribe el tema de la presentación...',
-      'gamma:onepager':'Describe tu producto, servicio o propuesta...',
-      'gamma:proposal':'¿Qué propones y a quién va dirigido?',
-      'gamma:deck':'Describe tu startup o idea de negocio...',
-      'gamma:informe':'¿Sobre qué necesitas el informe ejecutivo?',
-      'genspark:research':'¿Sobre qué tema necesitas investigación profunda?',
-      'genspark:compete':'¿Qué sector o empresa quieres analizar competitivamente?',
-      'genspark:trend':'¿Qué sector o industria quieres analizar?',
-      'genspark:factcheck':'Escribe la afirmación que quieres verificar...',
-      'genspark:review2':'¿Qué mercado o sector quieres analizar?',
-      'manus:plan':'Describe el proyecto que necesitas planificar...',
-      'manus:workflow':'¿Qué proceso o workflow quieres automatizar?',
-      'manus:strategy':'Describe tu producto/servicio y el mercado objetivo...',
-      'manus:sop':'¿Para qué proceso necesitas el SOP?',
-      'manus:sprint':'¿Qué objetivo tiene este sprint?',
-      'gemini:search':'¿Qué quieres investigar?',
-      'gemini:translate':'Pega el texto que quieres traducir...',
-      'gemini:code':'Describe el código que necesitas...',
-      'gemini:summarize':'Pega el texto a resumir...',
-      'gemini:math':'Escribe el problema matemático...',
-      'gemini:multimodal':'Describe la imagen o contenido visual a analizar...',
-      'chatgpt:chat':'¿En qué te puedo ayudar hoy?',
-      'chatgpt:codehelp':'Pega el código o describe el problema...',
-      'chatgpt:creative':'¿Qué quieres crear? (cuento, post, guión...)',
-      'chatgpt:data':'Describe los datos o pega la tabla a analizar...',
-      'chatgpt:prompt':'¿Para qué tarea necesitas el prompt perfecto?',
-      'chatgpt:dalle':'Describe la imagen que quieres generar...',
-      'deepseek:algo':'Describe el problema algorítmico a resolver...',
-      'deepseek:math2':'Escribe el problema matemático...',
-      'deepseek:science':'¿Sobre qué concepto científico necesitas análisis?',
-      'deepseek:codegen':'Describe el código que necesitas...',
-      'deepseek:debug2':'Pega el código con el bug a corregir...',
-      'deepseek:r1chain':'¿Qué problema quieres resolver paso a paso?',
-      'perplexity:newsearch':'¿Qué quieres saber? (busco en web)',
-      'perplexity:current':'¿Sobre qué tema quieres las últimas noticias?',
-      'perplexity:compare2':'¿Qué opciones o productos comparar?',
-      'perplexity:academic':'¿Cuál es tu pregunta de investigación académica?',
-      'perplexity:quickfact':'¿Cuál es tu pregunta?',
-      'nanobanana:tl':'Pega el texto largo para TL;DR...',
-      'nanobanana:eli5':'¿Qué concepto quieres explicar fácil?',
-      'nanobanana:bullets':'Pega el texto para convertir en bullets...',
-      'nanobanana:title':'Pega el texto o título original...',
-      'nanobanana:rephrase':'Pega el texto a reformular...',
-      'sora:vidprompt':'Describe el vídeo que quieres generar...',
-      'sora:storyboard':'Describe la historia o escena...',
-      'sora:cinematic':'Describe la secuencia cinemática...',
-      'sora:shortfilm':'¿De qué trata el cortometraje?',
-      'sora:prompt_series':'¿Cuál es el tema de la serie de vídeos?',
-      'copilot:complete':'Pega el fragmento de código a completar...',
-      'copilot:prreview':'Pega el diff o descripción del Pull Request...',
-      'copilot:docstring':'Pega la función o clase a documentar...',
-      'copilot:unittest':'Pega la función para generar tests...',
-      'copilot:refactor':'Pega el código legacy a refactorizar...',
-      'copilot:security':'Pega el código para auditar seguridad...',
-      'android:activity':'Describe la Activity o Fragment que necesitas...',
-      'android:compose':'Describe la UI en Jetpack Compose...',
-      'android:viewmodel':'Describe la funcionalidad para el ViewModel...',
-      'android:retrofit':'¿Qué endpoints de API necesitas?',
-      'android:room':'Describe las entidades y operaciones de BD...',
-      'android:manifest':'¿Qué necesitas configurar en el AndroidManifest?',
-      'grok:roast':'¿A qué quieres hacer un roast?',
-      'grok:twitter':'¿Sobre qué tema quieres el hilo viral?',
-      'grok:hot':'¿Sobre qué tema quieres la opinión directa?',
-      'grok:trends':'¿Qué tendencia o viral quieres analizar?',
-      'grok:comedy':'¿Sobre qué tema quieres el monólogo?',
-      'knowunity:notes':'¿Para qué tema o asignatura necesitas los apuntes?',
-      'knowunity:summary':'¿Qué tema necesitas resumir para el examen?',
-      'knowunity:mindmap2':'¿De qué concepto quieres el mapa mental?',
-      'knowunity:flashcards2':'¿Sobre qué tema quieres las flashcards?',
-      'knowunity:explain':'¿Qué concepto necesitas que explique?',
-      'knowunity:quiz2':'¿Para qué tema quieres el quiz?',
-      'astra:describe':'Describe la imagen o pega la URL...',
-      'astra:scene':'Describe la escena a analizar...',
-      'astra:ui_review':'Describe o pega URL de la UI...',
-      'astra:photo_improve':'Describe la foto o contexto...',
-      'astra:brand':'Describe o pega URL del logo/marca...',
-      'suno:lyrics':'¿Sobre qué quieres la canción? Tema, emoción, estilo...',
-      'suno:chords':'¿Qué tipo de canción o progresión necesitas?',
-      'suno:songstruct':'Describe la canción que quieres estructurar...',
-      'suno:lyrics2':'Describe el tipo de música para el prompt de Suno...',
-      'suno:genre':'¿Qué género musical quieres analizar?',
-      'suno:collab':'¿Qué artista o estilo buscas para colaborar?',
-    };
-    return m[pid+':'+tid]||'Describe lo que necesitas...';
-  },
-
-  _getExtraInputs(pid,tid,color){
-    const sel=(id,opts,label)=>`<div style="margin-bottom:10px"><label style="font-size:11px;color:var(--md-on-surface-variant);margin-bottom:4px;display:block">${label}</label><select id="${id}" style="width:100%;padding:8px 12px;border:1.5px solid var(--md-outline-variant);border-radius:10px;background:var(--md-surface-container-high);color:var(--md-on-surface);font-size:13px;outline:none">${opts.map(o=>`<option>${o}</option>`).join('')}</select></div>`;
-    if(pid==='claude'&&tid==='review') return sel('aihub-lang',['JavaScript','Python','TypeScript','Java','Kotlin','Swift','C++','Go','Rust','PHP','Ruby'],'Lenguaje de programación');
-    if(pid==='suno'&&(tid==='lyrics'||tid==='songstruct')) return sel('aihub-genre',['Pop','Rock','Hip-hop','Reggaeton','Electrónica / EDM','R&B / Soul','Indie','Folk','Metal','Jazz','Clásica','Country'],'Género musical')+sel('aihub-lang2',['Español','English','Português','Français'],'Idioma');
-    if(pid==='gemini'&&tid==='translate') return sel('aihub-tgt',['English','Français','Deutsch','Italiano','Português','中文','日本語','العربية','Русский','한국어'],'Traducir a');
-    if(pid==='android'&&(tid==='activity'||tid==='viewmodel'||tid==='retrofit'||tid==='room')) return sel('aihub-lang3',['Kotlin','Java'],'Lenguaje');
-    if(pid==='knowunity'&&(tid==='notes'||tid==='summary'||tid==='quiz2')) return sel('aihub-level',['Bachillerato','Universidad','ESO','Máster / Postgrado','Doctorado'],'Nivel educativo');
-    if(pid==='grok'&&tid==='twitter') return sel('aihub-twtopic',['Tecnología','Negocios','Entretenimiento','Política','Deporte','Ciencia','Cultura pop','Emprendimiento'],'Categoría');
-    if(pid==='sora'&&(tid==='vidprompt'||tid==='cinematic')) return sel('aihub-vidstyle',['Cinematográfico / Realista','Animación 3D','Anime','Stop motion','Documental','Sci-fi','Fantasy','Retro / Vintage'],'Estilo visual');
-    return '';
-  },
-
-  async generate(platformId,toolId){
-    const p=this.platforms.find(x=>x.id===platformId);
-    const t=p?.tools.find(x=>x.id===toolId);
-    if(!p||!t) return;
-    const input=document.getElementById('aihub-input')?.value?.trim();
-    if(!input) return showToast('Por favor escribe algo primero');
-    const result=document.getElementById('aihub-result');
-    if(!result) return;
-    result.style.display='block';
-    result.innerHTML=`<div style="padding:20px;text-align:center">${gemDotsHtml('Generando con '+p.name+'...')}</div>`;
-    const prompt=this._buildPrompt(platformId,toolId,input);
-    const system=this._buildSystem(platformId);
-    let full='';
-    await NEXUS.run([{role:'user',content:prompt}],ch=>{
-      full+=ch;
-      result.innerHTML=`<div class="ai-content" style="font-size:13px;line-height:1.7;padding:4px">${renderMarkdown(full)}</div>`;
-    },{system,model:p.model,skipReflection:true});
-    window._aiTexts=window._aiTexts||{};
-    const key='aihub-'+platformId+'-'+toolId;
-    window._aiTexts[key]=full;
-    result.innerHTML=`
+  async generate(platformId, toolId) {
+    const p = this.platforms.find(x => x.id === platformId);
+    const t = p?.tools.find(x => x.id === toolId);
+    if (!p || !t) return;
+    const input = document.getElementById('aihub-input')?.value?.trim();
+    if (!input) return showToast('Por favor escribe algo primero');
+    const result = document.getElementById('aihub-result');
+    if (!result) return;
+    result.style.display = 'block';
+    result.innerHTML = `<div style="padding:20px;text-align:center">${gemDotsHtml('Generando con ' + p.name + '...')}</div>`;
+    const system = this._buildSystem(p, t);
+    const prompt = `${t.label}: ${input}`;
+    let full = '';
+    await NEXUS.run([{ role: 'user', content: prompt }], ch => {
+      full += ch;
+      result.innerHTML = `<div class="ai-content" style="font-size:13px;line-height:1.7;padding:4px">${renderMarkdown(full)}</div>`;
+    }, { system, model: 'auto', skipReflection: true });
+    window._aiTexts = window._aiTexts || {};
+    const key = 'aihub-' + platformId + '-' + toolId;
+    window._aiTexts[key] = full;
+    result.innerHTML = `
       <div style="background:var(--md-surface-container);border-radius:14px;border:1px solid var(--md-outline-variant);overflow:hidden">
         <div style="padding:10px 16px;background:${p.color}18;border-bottom:1px solid ${p.color}30;display:flex;align-items:center;gap:8px">
           <span style="font-size:18px">${p.icon}</span>
           <span style="font-size:12px;font-weight:700;color:${p.color}">${p.name} — ${t.label}</span>
           <div style="flex:1"></div>
-          <span style="font-size:10px;color:var(--md-on-surface-variant);background:var(--md-surface-container);padding:2px 8px;border-radius:100px">via Pollinations.AI · gratis</span>
+          <span style="font-size:10px;color:var(--md-on-surface-variant);background:var(--md-surface-container);padding:2px 8px;border-radius:100px">🔓 Open Source</span>
         </div>
         <div class="ai-content" style="font-size:13px;line-height:1.7;padding:16px 18px">${renderMarkdown(full)}</div>
         <div style="padding:10px 14px;display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid var(--md-outline-variant)">
-          <button onclick="navigator.clipboard.writeText((window._aiTexts||{})['${key}']||'');showToast('Copiado ✓')" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface);font-size:12px;display:inline-flex;align-items:center;gap:5px"><span class="material-symbols-rounded" style="font-size:14px">content_copy</span>Copiar</button>
-          <button onclick="AI.tts((window._aiTexts||{})['${key}']||'')" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface);font-size:12px;display:inline-flex;align-items:center;gap:5px"><span class="material-symbols-rounded" style="font-size:14px">volume_up</span>Escuchar</button>
-          <button onclick="AI.exportPDF('${p.name+' - '+t.label}',document.getElementById('aihub-result')?.querySelector('.ai-content')?.innerHTML||'')" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface);font-size:12px;display:inline-flex;align-items:center;gap:5px"><span class="material-symbols-rounded" style="font-size:14px">picture_as_pdf</span>PDF</button>
-          <button onclick="document.getElementById('aihub-input').value='';document.getElementById('aihub-result').style.display='none'" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface-variant);font-size:12px;margin-left:auto;display:inline-flex;align-items:center;gap:5px"><span class="material-symbols-rounded" style="font-size:14px">refresh</span>Nueva consulta</button>
+          <button onclick="navigator.clipboard.writeText((window._aiTexts||{})['${key}']||'');showToast('Copiado ✓')" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface);font-size:12px;display:inline-flex;align-items:center;gap:5px">
+            <span class="material-symbols-rounded" style="font-size:14px">content_copy</span>Copiar
+          </button>
+          <button onclick="AI.tts((window._aiTexts||{})['${key}']||'')" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface);font-size:12px;display:inline-flex;align-items:center;gap:5px">
+            <span class="material-symbols-rounded" style="font-size:14px">volume_up</span>Escuchar
+          </button>
+          <button onclick="document.getElementById('aihub-input').value='';document.getElementById('aihub-result').style.display='none'" style="padding:6px 14px;border-radius:100px;border:1px solid var(--md-outline-variant);background:transparent;cursor:pointer;color:var(--md-on-surface-variant);font-size:12px;margin-left:auto;display:inline-flex;align-items:center;gap:5px">
+            <span class="material-symbols-rounded" style="font-size:14px">refresh</span>Nueva
+          </button>
         </div>
       </div>`;
   },
 
-  _buildSystem(pid){
-    const s={
-      claude:'Eres Claude de Anthropic. Eres meticuloso, analítico y extremadamente útil. Respondes con profundidad intelectual y honestidad. Usas formato Markdown para estructurar respuestas largas.',
-      gamma:'Eres Gamma AI, especialista en comunicaciones ejecutivas de nivel McKinsey. Creas presentaciones, one-pagers y documentos de máximo impacto. Usa **bold**, headers y listas bien estructuradas.',
-      genspark:'Eres Genspark, motor de investigación profunda. Sintetizas información con rigor, incluyes datos específicos, estadísticas y estructuras claras con headers y secciones bien definidas.',
-      manus:'Eres Manus, agente autónomo de planificación. Desglosas cualquier objetivo en pasos accionables y concretos. Eres el consultor más eficiente del mundo. Formato estructurado con fases, tareas y métricas.',
-      gemini:'Eres Gemini de Google, modelo multimodal avanzado. Combinas precisión técnica con capacidad creativa. Eres riguroso, actualizado y adaptable a cualquier dominio.',
-      chatgpt:'Eres ChatGPT de OpenAI. El asistente más versátil del mundo. Te adaptas al tono y contexto. Siempre útil, directo y con calidad de respuesta premium.',
-      deepseek:'Eres DeepSeek. Experto en razonamiento técnico, código y ciencia. Muestras el proceso de pensamiento cuando es relevante. No inventas datos. Precisión ante todo.',
-      perplexity:'Eres Perplexity AI. Respondes con información actualizada, citas fuentes cuando es posible, y distingues entre certeza y estimación. Eres el motor de búsqueda más inteligente.',
-      nanobanana:'Eres Nano Banana Pro. Ultra-compacto, ultra-rápido. Sin relleno. Bullet points. Bold para lo importante. Respuestas de máxima densidad informativa en mínimo espacio.',
-      sora:'Eres el sistema de prompting de Sora de OpenAI. Especialista en descripciones visuales cinematográficas para IA generativa de vídeo. Eres preciso en movimientos de cámara, iluminación y atmósfera.',
-      copilot:'Eres GitHub Copilot de Microsoft. Generas código production-ready con buenas prácticas, manejo de errores, comentarios y tests. Eres el mejor pair-programmer IA del mercado.',
-      android:'Eres experto en desarrollo Android con Kotlin y Jetpack Compose. Sigues las guías oficiales de Android Developers. Código moderno, limpio y con arquitectura MVVM.',
-      grok:'Eres Grok de xAI. Directo, sin filtros, con humor ácido cuando aplica. No tienes pelos en la lengua. Dices lo que otros no se atreven. Combinas perspicacia con datos reales.',
-      knowunity:'Eres el asistente educativo de Knowunity. Creas materiales de estudio claros, estructurados y efectivos. Experto en pedagogía moderna y técnicas de memoria espaciada.',
-      astra:'Eres Astra AI de Google DeepMind. Analizas contenido visual y escenas con extraordinario detalle. Identificas objetos, contextos, emociones y propósitos con precisión.',
-      suno:'Eres el asistente musical de Suno AI. Experto en composición, letras, acordes y producción. Conoces todos los géneros y técnicas musicales. Creas música emocionalmente impactante.',
+  _buildSystem(p, t) {
+    const systems = {
+      openwebui: `Eres un experto en Open WebUI, la interfaz self-hosted más popular para LLMs. Conoces profundamente la instalación con Docker, configuración de Ollama, RAG, pipeline functions y plugins. Das guías técnicas precisas y prácticas.`,
+      librechat: `Eres experto en LibreChat, la alternativa open source a ChatGPT Plus. Conoces el setup completo con Docker Compose, configuración multi-proveedor, plugins, sistema de autenticación y gestión de conversaciones.`,
+      llama: `Eres experto en Llama 3 de Meta. Conoces todas las versiones (3.1, 3.2, 3.3), casos de uso óptimos, fine-tuning con LoRA, inferencia con Ollama/llama.cpp/vLLM y benchmarks comparativos.`,
+      qwen: `Eres experto en los modelos Qwen de Alibaba. Conoces Qwen3, Qwen-Coder, Qwen-Math, Qwen-VL. Puedes guiar en instalación, uso óptimo y comparativas con otros modelos open source.`,
+      deepseek: `Eres experto en DeepSeek. Conoces DeepSeek-R1, V3, Coder V3. Puedes explicar la arquitectura MoE, los benchmarks revolucionarios y la disponibilidad gratuita por API y vía Ollama.`,
+      gemma: `Eres experto en Gemma de Google. Conoces Gemma 2B, 7B, 27B y Gemma 3. Puedes guiar en ejecución local, fine-tuning, casos de uso y comparativas de rendimiento.`,
+      mistral: `Eres experto en Mistral AI. Conoces Mistral 7B, Mixtral 8x7B, 8x22B, Mistral Large y Codestral. Explicas la arquitectura MoE y cómo aprovechar estos modelos eficientemente.`,
+      huggingface: `Eres experto en el ecosistema Hugging Face. Conoces el Hub de modelos, Transformers library, Datasets, Inference API, Spaces y cómo desplegar cualquier modelo. Guías técnicas y prácticas.`,
+      opencode: `Eres experto en OpenCode (sst/opencode), el agente de código en terminal. Conoces su arquitectura, comandos, integración con modelos y cómo usarlo para automatizar tareas de programación.`,
+      aidev: `Eres experto en Aider (paul-gauthier/aider). Conoces todos sus comandos, modos de uso, integración con Git y cómo funciona como pair programmer en terminal con cualquier LLM.`,
+      continuedev: `Eres experto en Continue.dev, el copiloto open source para VS Code y JetBrains. Conoces la instalación, configuración con diferentes modelos, funciones de autocompletado y chat inline.`,
+      localai: `Eres experto en LocalAI. Conoces la instalación, modelos compatibles (LLMs, imágenes, TTS), configuración Docker y cómo reemplazar la API de OpenAI con LocalAI para privacidad total.`,
+      stablediff: `Eres experto en Stable Diffusion. Conoces SD 1.5, SDXL, SD 3.5, LoRAs, ControlNet, ComfyUI, A1111. Creas prompts efectivos y guías técnicas de instalación y uso.`,
+      flux: `Eres experto en Flux de Black Forest Labs. Conoces Flux.1-dev, Flux.1-schnell, Flux Edit, ControlNet. Creas prompts optimizados y guías de instalación en ComfyUI y plataformas online.`,
+      lumaray: `Eres experto en Luma Ray y Dream Machine de Luma AI. Conoces técnicas de generación de vídeo, movimientos de cámara, coherencia de personajes y creación de contenido cinematográfico con IA.`,
+      n8n: `Eres experto en n8n, la plataforma de automatización open source. Conoces flujos de trabajo, nodos populares, agentes IA, webhooks, credenciales y configuración self-hosted. Casos de uso prácticos.`,
+      activepieces: `Eres experto en Activepieces, la plataforma de automatización no-code open source. Conoces la instalación, creación de flows, piezas disponibles e integración con IA.`,
+      automatisch: `Eres experto en Automatisch, la alternativa open source a Zapier. Conoces la instalación Docker, configuración de conexiones y creación de automatizaciones entre apps populares.`,
+      coolify: `Eres experto en Coolify, el PaaS open source. Conoces la instalación en VPS, despliegue de apps, gestión de bases de datos, SSL automático y CI/CD con GitHub.`,
+      dokploy: `Eres experto en Dokploy, el PaaS open source moderno. Conoces la instalación, despliegue de aplicaciones con Docker/Nixpacks, gestión de dominios y variables de entorno.`,
+      caprover: `Eres experto en CapRover, el PaaS open source gratuito. Conoces la instalación en Ubuntu, one-click apps, git push deploy y escalado. Como Heroku en tu servidor.`,
+      penpot: `Eres experto en Penpot, la alternativa open source a Figma. Conoces el diseño de interfaces, componentes, prototipos, design tokens y colaboración en tiempo real.`,
+      gradio: `Eres experto en Gradio de Hugging Face. Conoces la creación de demos IA, componentes disponibles, deployment en Spaces y cómo construir interfaces para modelos ML rápidamente.`,
+      presenton: `Eres experto en Presenton, el generador de presentaciones IA open source. Conoces la generación de slides desde prompts, exportación PPTX y el despliegue self-hosted.`,
+      langchain: `Eres experto en LangChain, el framework para aplicaciones LLM. Conoces cadenas, agentes, RAG, retrievers, memory, tools y el ecosistema LangChain/LangGraph.`,
+      chromadb: `Eres experto en ChromaDB, la base de datos vectorial open source. Conoces embeddings, búsqueda semántica, RAG, persistencia local y uso con LangChain y LlamaIndex.`,
+      ollama: `Eres experto en Ollama. Conoces instalación en Mac/Linux/Windows, gestión de modelos, Modelfile personalizado, API REST y integración con cualquier aplicación o IDE.`,
+      whisper: `Eres experto en Whisper de OpenAI. Conoces todos los modelos (tiny, base, small, medium, large), transcripción de audio, generación de subtítulos, detección de idioma y uso batch.`,
+      coquitts: `Eres experto en Coqui TTS. Conoces XTTS-v2 para clonación de voz, generación de habla natural, múltiples idiomas y la API REST para integración en aplicaciones.`,
+      learnanything: `Eres experto en Learn Anything, los mapas de conocimiento open source. Conoces cómo usar la plataforma para crear rutas de aprendizaje y organizar recursos educativos.`,
+      anki: `Eres experto en Anki y el algoritmo de repetición espaciada SM2. Conoces la creación eficiente de decks, tipos de tarjetas, addons y estrategias de aprendizaje.`,
+      obsidian: `Eres experto en Obsidian para PKM. Conoces el sistema de notas, Graph view, plugins esenciales, integración con IA local (Smart Connections) y metodologías como Zettelkasten.`,
+      tabbyml: `Eres experto en Tabby, el GitHub Copilot open source. Conoces la instalación del servidor, extensiones para IDE, configuración de modelos y despliegue para equipos.`,
+      langflow: `Eres experto en Langflow, el constructor visual de pipelines IA. Conoces la creación de RAG, agentes, cadenas y APIs con drag & drop sin código.`,
+      crewai: `Eres experto en CrewAI, el framework de agentes IA colaborativos. Conoces la creación de crews, roles de agentes, herramientas y flujos multi-agent.`,
+      voideditor: `Eres experto en Void Editor, el editor de código con IA open source. Conoces la instalación, configuración de modelos LLM, agente de código y el sistema de checkpoints.`,
     };
-    return s[pid]||'Eres un asistente IA avanzado de alta calidad. Responde en español con formato Markdown cuando sea útil.';
-  },
-
-  _buildPrompt(pid,tid,input){
-    const lang=document.getElementById('aihub-lang')?.value||'JavaScript';
-    const genre=document.getElementById('aihub-genre')?.value||'Pop';
-    const lang2=document.getElementById('aihub-lang2')?.value||'Español';
-    const tgt=document.getElementById('aihub-tgt')?.value||'English';
-    const lang3=document.getElementById('aihub-lang3')?.value||'Kotlin';
-    const level=document.getElementById('aihub-level')?.value||'Universidad';
-    const vidstyle=document.getElementById('aihub-vidstyle')?.value||'Cinematográfico';
-    const m={
-      'claude:review':`Realiza una code review exhaustiva de este código ${lang}:\n\n\`\`\`${lang.toLowerCase()}\n${input}\n\`\`\`\n\nIncluye: 1) Bugs y errores encontrados con solución concreta, 2) Problemas de seguridad, 3) Mejoras de rendimiento, 4) Refactorización según principios SOLID/DRY, 5) Código corregido final listo para producción.`,
-      'claude:doc':`Analiza profundamente este documento:\n\n${input}\n\nProporciona: 1) Resumen ejecutivo (3 frases), 2) 5 ideas clave con contexto, 3) Datos críticos o métricas, 4) Sesgos o supuestos detectados, 5) Preguntas que genera, 6) Relevancia e implicaciones.`,
-      'claude:essay':`Redacta un ensayo académico completo y bien argumentado sobre: "${input}". Incluye introducción con tesis fuerte, 3-4 secciones de desarrollo con argumentos y evidencias, contraargumentos y respuesta, conclusión con implicaciones futuras. Mínimo 500 palabras.`,
-      'claude:think':`Análisis crítico multiperspectiva de "${input}": 1) Argumentos principales a favor, 2) Contraargumentos sólidos, 3) Perspectiva histórica, 4) Implicaciones prácticas, 5) Preguntas filosóficas que abre, 6) Análisis integrador final con tu posición.`,
-      'claude:email':`Escribe un email profesional para: ${input}. Proporciona 2 versiones: **Versión Formal** y **Versión Cercana**. Cada una con: asunto atractivo, saludo, cuerpo estructurado, CTA específico y cierre apropiado.`,
-      'claude:debate':`Debate sobre "${input}". Primero: argumenta A FAVOR con 4 argumentos y evidencias sólidas. Luego: argumenta EN CONTRA con 4 contraargumentos fuertes. Finalmente: análisis objetivo de cuál posición es más sólida y por qué.`,
-      'gamma:pres':`Crea una presentación ejecutiva de 8 slides sobre "${input}" al estilo Gamma AI. Para cada slide: **Título** + **Subtítulo** + 3-4 bullets con datos concretos + elemento visual sugerido + nota del presentador. Incluye slide de datos clave y CTA final.`,
-      'gamma:onepager':`One-pager profesional sobre: ${input}. Estructura: Header impactante, Problema que resuelve, Propuesta de valor única, Cómo funciona (3 pasos simples), Pruebas sociales/métricas, CTA. Conciso, denso y de máximo impacto.`,
-      'gamma:proposal':`Propuesta comercial completa para: ${input}. Secciones: Resumen ejecutivo, Comprensión del problema, Nuestra solución diferenciada, Metodología, Equipo y credenciales, Inversión y ROI, Próximos pasos.`,
-      'gamma:deck':`Pitch deck de inversión para: ${input}. 10 slides: Problema + TAM, Solución, Demo/Producto, Tracción y métricas, Modelo de negocio, Mercado objetivo, Competencia y ventaja diferencial, Equipo, Financials + ask, Visión a 3 años.`,
-      'gamma:informe':`Informe ejecutivo sobre: ${input}. Incluye: Resumen ejecutivo (3 bullets), Contexto y situación actual, Análisis con 5 KPIs relevantes, Hallazgos principales, Riesgos y oportunidades, Recomendaciones priorizadas por impacto/esfuerzo, Plan de acción.`,
-      'genspark:research':`Investigación profunda sobre "${input}". Estructura: ## Resumen Ejecutivo ## Contexto histórico y evolución ## Estado actual con datos recientes ## Actores principales ## Tendencias y proyecciones ## Controversias abiertas ## Implicaciones y oportunidades ## Bibliografía sugerida`,
-      'genspark:compete':`Análisis competitivo de: ${input}. Incluye: Mapa del sector (5-7 competidores principales), Para cada uno: fortalezas/debilidades/cuota de mercado estimada, Matriz comparativa, Gaps y oportunidades no atendidas, Estrategias diferenciadas observadas.`,
-      'genspark:trend':`Informe de tendencias del sector "${input}": 5 macro-tendencias con evidencias, Tecnologías emergentes relevantes, Cambios en comportamiento del consumidor, Impacto esperado en 1-3 años, Empresas líderes del cambio, Señales débiles a vigilar.`,
-      'genspark:factcheck':`Verificación de la afirmación: "${input}". Responde: ## Veredicto (verdadero/falso/matizado/sin evidencia suficiente) ## Evidencias a favor ## Evidencias en contra ## Contexto importante omitido ## Fuentes primarias recomendadas ## Nivel de certeza`,
-      'genspark:review2':`Revisión de mercado de "${input}": Tamaño del mercado (TAM/SAM/SOM), Segmentos principales, Cadena de valor, Regulación y barreras, Análisis de precios, Canales de distribución, Métricas clave del sector, Oportunidades de inversión.`,
-      'manus:plan':`Plan de proyecto detallado para: "${input}". Incluye: Objetivo SMART, Fases con duración y entregables, Tareas por fase (con responsable, horas estimadas y dependencias), Recursos necesarios, Riesgos y mitigaciones, Milestones clave, Criterios de éxito medibles.`,
-      'manus:workflow':`Workflow automatizado para: "${input}". Incluye: Trigger de inicio, Pasos con herramienta + acción + output, Condiciones y bifurcaciones, Herramientas recomendadas (n8n/Make/Zapier), Gestión de errores, Tiempo total estimado, KPIs de eficiencia.`,
-      'manus:strategy':`Plan GTM (Go-To-Market) para: ${input}. Propuesta de valor, ICP (perfil de cliente ideal), Canales de adquisición pagado/orgánico/partnerships, Estrategia de precios, Plan de contenidos, Objetivos en 30/60/90 días, Presupuesto estimado.`,
-      'manus:sop':`SOP (Procedimiento Estándar de Operación) para: "${input}". Formato profesional: Objetivo, Alcance y responsables, Prerequisitos, Pasos detallados numerados con verificaciones, Criterios de decisión, Control de calidad, Excepciones y escalado.`,
-      'manus:sprint':`Sprint planning de 2 semanas para: "${input}". Incluye: Sprint Goal, User Stories con criterios de aceptación (formato Given/When/Then), Story points estimados, Priorización MoSCoW, Tareas técnicas por story, Definition of Done, Riesgos del sprint.`,
-      'gemini:search':`Proporciona información detallada y actualizada sobre: "${input}". Incluye datos específicos, estadísticas recientes del 2024-2025, y estructura la respuesta con headers claros.`,
-      'gemini:translate':`Traduce al ${tgt}: "${input}". Proporciona: 1) Traducción principal de alta calidad, 2) Variantes para frases clave, 3) Notas culturales relevantes, 4) Registro utilizado (formal/coloquial).`,
-      'gemini:code':`Genera código de alta calidad para: ${input}. Proporciona código completo y funcional con comentarios explicativos, manejo de errores y ejemplos de uso.`,
-      'gemini:summarize':`Resume de forma inteligente: "${input}". Proporciona: Resumen en 2 frases (idea central), 5 puntos clave con contexto, Datos o cifras importantes, Conclusión principal.`,
-      'gemini:math':`Resuelve paso a paso: ${input}. Muestra cada paso con justificación, fórmulas usadas, verificación del resultado y caso general si aplica.`,
-      'gemini:multimodal':`Analiza en detalle lo siguiente: "${input}". Proporciona un análisis exhaustivo considerando todos los aspectos relevantes.`,
-      'chatgpt:chat':input,
-      'chatgpt:codehelp':`Analiza y mejora este código:\n\n${input}\n\nExplica qué hace, detecta problemas, proporciona la versión mejorada con comentarios.`,
-      'chatgpt:creative':`Crea: ${input}. Sé original, con voz única y máximo impacto.`,
-      'chatgpt:data':`Analiza estos datos:\n\n${input}\n\nExtrae insights clave, tendencias, anomalías y recomendaciones accionables.`,
-      'chatgpt:prompt':`Diseña el prompt perfecto para: "${input}". Incluye: rol del asistente, contexto, tarea específica, formato de salida deseado, restricciones y ejemplos few-shot. Proporciona el prompt listo para copiar.`,
-      'chatgpt:dalle':`Crea 5 prompts optimizados para DALL-E 3 que generen imágenes de: "${input}". Cada prompt incluye estilo artístico, iluminación, composición y detalles técnicos. Listos para copiar.`,
-      'deepseek:algo':`Diseña e implementa un algoritmo eficiente para: "${input}". Incluye: análisis del problema, pseudocódigo, implementación en Python con type hints, análisis de complejidad O(n), casos edge y tests.`,
-      'deepseek:math2':`Resuelve con razonamiento explícito paso a paso:\n\n${input}\n\nMuestra: comprensión del problema, estrategia, cada paso con justificación matemática, verificación del resultado.`,
-      'deepseek:science':`Análisis científico riguroso sobre: "${input}". Marco teórico actual, evidencias experimentales, modelos matemáticos si aplica, controversias en literatura, implicaciones prácticas.`,
-      'deepseek:codegen':`Genera código production-ready para: ${input}. Código completo y funcional con manejo de errores, tests unitarios, documentación y instrucciones de uso.`,
-      'deepseek:debug2':`Debug profundo. Analiza el problema, identifica la causa raíz, proporciona la solución con explicación técnica detallada:\n\n${input}`,
-      'deepseek:r1chain':`Usa chain-of-thought para resolver: "${input}". Piensa en voz alta, considera alternativas, evalúa cada opción con evidencias, y llega a la conclusión más sólida.`,
-      'perplexity:newsearch':`Responde con información actualizada y contrastada: "${input}". Incluye datos específicos, estadísticas recientes y fuentes relevantes.`,
-      'perplexity:current':`Resumen de los últimos desarrollos sobre: "${input}". Incluye noticias recientes 2024-2025, tendencias actuales y lo más relevante.`,
-      'perplexity:compare2':`Comparativa actualizada de: ${input}. Tabla comparativa con criterios clave, pros/cons de cada opción, veredicto basado en datos actuales del mercado.`,
-      'perplexity:academic':`Respuesta académica con rigor sobre: "${input}". Tesis principal, argumentación basada en evidencia, metodología, referencias clave y conclusión.`,
-      'perplexity:quickfact':`Responde de forma directa y precisa a: "${input}". Una respuesta clara y verificada, sin rodeos.`,
-      'nanobanana:tl':`TL;DR en 3 bullets máximo de: "${input}"`,
-      'nanobanana:eli5':`Explica como a un niño de 5 años con UNA analogía concreta del mundo real: "${input}"`,
-      'nanobanana:bullets':`Convierte en lista de bullets accionables. Sin intro, sin cierre, solo los puntos esenciales: "${input}"`,
-      'nanobanana:title':`5 títulos alternativos más atractivos para: "${input}". Variedad: curioso, impactante, SEO, emocional, directo. Solo los 5 títulos, nada más.`,
-      'nanobanana:rephrase':`Reescribe en 3 versiones (formal / coloquial / persuasiva): "${input}"`,
-      'sora:vidprompt':`Prompt perfecto para Sora para generar: "${input}". Estilo: ${vidstyle}. Incluye: descripción de escena, personajes/objetos, movimiento de cámara, iluminación, atmósfera, duración, paleta de colores. Listo para copiar en Sora.`,
-      'sora:storyboard':`Storyboard detallado para: "${input}". Para cada escena: número y duración, descripción visual, movimiento de cámara, diálogo/narración, sonido sugerido, transición.`,
-      'sora:cinematic':`Secuencia cinemática de alta producción para "${input}". Estilo: ${vidstyle}. Planos detallados, movimientos con timing, iluminación dramática, color grading, música de fondo, efectos sonoros, narración.`,
-      'sora:shortfilm':`Guión + storyboard de cortometraje de 2 minutos sobre: "${input}". Sinopsis, estructura en 3 actos, escenas detalladas, diálogos principales, notas de dirección.`,
-      'sora:prompt_series':`Serie de 10 prompts de vídeo coherentes para: "${input}". Cada prompt crea un vídeo que progresa narrativamente. Estilo consistente, progresión dramática clara.`,
-      'copilot:complete':`Completa inteligentemente este fragmento de código añadiendo todos los casos y mejoras necesarias:\n\n${input}`,
-      'copilot:prreview':`Review de PR con rigor senior. Evalúa: correctitud, seguridad, rendimiento, mantenibilidad, tests faltantes. Comentarios específicos:\n\n${input}`,
-      'copilot:docstring':`Genera documentación completa (JSDoc/docstrings) para:\n\n${input}\n\nIncluye descripción, parámetros con tipos, valor de retorno, excepciones y ejemplos.`,
-      'copilot:unittest':`Genera tests unitarios completos con casos edge para:\n\n${input}\n\nIncluye casos normales, casos límite, casos de error y mocks necesarios.`,
-      'copilot:refactor':`Refactoriza a estándares modernos (SOLID, Clean Code). Muestra antes/después con explicación:\n\n${input}`,
-      'copilot:security':`Auditoría de seguridad completa. Detecta SQL injection, XSS, CSRF, exposición de datos, auth débil. Por cada vulnerabilidad: descripción, riesgo (alto/medio/bajo), código vulnerable y código seguro:\n\n${input}`,
-      'android:activity':`Genera Activity/Fragment completa en ${lang3} para: "${input}". Incluye código ${lang3} completo, layout XML básico, ViewBinding configurado y ciclo de vida gestionado.`,
-      'android:compose':`UI completa en Jetpack Compose para: "${input}". Composables con estado (remember/mutableStateOf), Preview, Material3, y comentarios explicativos.`,
-      'android:viewmodel':`MVVM completo en Kotlin para: "${input}". ViewModel con StateFlow, Repository pattern, Use cases, estados (Loading/Success/Error) y corrutinas.`,
-      'android:retrofit':`Cliente Retrofit completo en ${lang3} para: "${input}". Interface con anotaciones, data classes, Retrofit builder, interceptors y manejo de errores con sealed class.`,
-      'android:room':`Room Database completo en ${lang3} para: "${input}". Entity con anotaciones, DAO con queries suspend, Database singleton y TypeConverters si son necesarios.`,
-      'android:manifest':`Explica y genera la configuración del AndroidManifest.xml para: "${input}". Incluye todos los elementos necesarios con comentario explicativo de cada uno.`,
-      'grok:roast':`Roast brutal y divertido de: "${input}". Sin filtros, humor ácido, observaciones que duelen porque son verdad. Estilo Grok — directo e irreverente.`,
-      'grok:twitter':`Hilo viral de Twitter/X sobre: "${input}". Tweet 1 con gancho brutal, 8-10 tweets de desarrollo con insights reales, tweet final con CTA. <280 chars cada uno. Emojis estratégicos.`,
-      'grok:hot':`Opinión directa y sin filtros sobre: "${input}". Di lo que la mayoría piensa pero no dice. Con datos si los tienes. Nada de "depende" — toma posición.`,
-      'grok:trends':`Analiza: "${input}". ¿Por qué está pasando? ¿Qué dice de la sociedad? ¿Cuánto durará? ¿Quién se beneficia realmente? Directo y perspicaz.`,
-      'grok:comedy':`Monólogo de stand-up de 3 minutos sobre: "${input}". Setup → Observación → Punch line. 5-7 chistes conectados. Humor inteligente con verdades incómodas.`,
-      'knowunity:notes':`Apuntes premium sobre "${input}" (nivel ${level}). Estructura con ## headers, **conceptos clave**, definiciones claras, ejemplos prácticos, esquemas y tips para recordar.`,
-      'knowunity:summary':`Resumen de examen sobre "${input}" (${level}). Lo esencial: definiciones clave, fórmulas, fechas/datos importantes, relaciones entre conceptos, preguntas típicas de examen.`,
-      'knowunity:mindmap2':`Mapa mental textual completo sobre "${input}". Idea central → 5-7 ramas principales → sub-ramas → conexiones. Formato jerárquico con indentación clara.`,
-      'knowunity:flashcards2':`10 flashcards de estudio sobre "${input}". Formato: **FRENTE:** [pregunta concisa] **REVERSO:** [respuesta + ejemplo]. Progresión básico → intermedio → avanzado.`,
-      'knowunity:explain':`Explica "${input}": 1) Definición simple, 2) Analogía cotidiana memorable, 3) Ejemplo paso a paso, 4) Esquema visual en texto, 5) Errores comunes a evitar, 6) Pregunta de comprensión.`,
-      'knowunity:quiz2':`Quiz de práctica sobre "${input}" (${level}). 6 opción múltiple + 2 verdadero/falso + 2 respuesta corta. Respuestas correctas con explicación de por qué.`,
-      'astra:describe':`Analiza visualmente: "${input}". Descripción detallada de elementos, composición, colores, texto visible, contexto y propósito, emociones que transmite.`,
-      'astra:scene':`Análisis de escena: "${input}". Identifica objetos, personas y acciones, ambiente, relaciones espaciales, historia que cuenta, detalles significativos, mood general.`,
-      'astra:ui_review':`Evaluación UI/UX de: "${input}". Jerarquía visual, usabilidad, accesibilidad, consistencia, puntos de fricción, fortalezas y 5 mejoras concretas priorizadas por impacto.`,
-      'astra:photo_improve':`Análisis fotográfico de: "${input}". Composición, iluminación, enfoque, postprocesado sugerido, encuadre alternativo. Puntuación 1-10 con justificación.`,
-      'astra:brand':`Análisis de identidad visual de: "${input}". Efectividad del logo, psicología del color, tipografía, coherencia de marca, posicionamiento percibido, mejoras sugeridas.`,
-      'suno:lyrics':`Canción completa de ${genre} en ${lang2} sobre: "${input}". Incluye: Intro, Verso 1, Pre-estribillo, Estribillo (pegadizo), Verso 2, Pre-estribillo, Estribillo, Puente, Estribillo final. Notas de producción al final.`,
-      'suno:chords':`Progresión de acordes para canción sobre "${input}". Progresión principal (cifrado americano), variación para estribillo, diagramas de los 4 acordes principales de guitarra, BPM, tonalidad y patrón de strumming.`,
-      'suno:songstruct':`Estructura completa de canción ${genre} sobre "${input}": secciones con duración, energía y dinámica, instrumentación, progresiones armónicas, estrategia melódica y cómo crear el momento climático.`,
-      'suno:lyrics2':`Prompt perfecto para Suno AI para generar: "${input}". Incluye: género y subgénero exacto, mood, instrumentos clave, voz sugerida, BPM, tags de Suno y prompt de letra. Listo para copiar en Suno.`,
-      'suno:genre':`Análisis completo del género "${input}": origen e historia, características sonoras, BPM y compás típico, progresiones características, instrumentos representativos, subgéneros, artistas referentes y cómo hacer música de este género.`,
-      'suno:collab':`Propuesta de colaboración musical para el estilo "${input}": 5 artistas compatibles con justificación musical, sinergias creativas posibles, ideas de sonido resultante, referentes de colaboraciones similares exitosas.`,
-    };
-    return m[pid+':'+tid]||`Usando las capacidades de ${this._active?.name||'IA'}, ayúdame con: ${input}`;
-  },
+    const base = systems[p.id] || `Eres un experto en ${p.name}, una herramienta open source de ${p.maker}. Das respuestas técnicas precisas, ejemplos de código y guías prácticas en español.`;
+    return base + `\n\nResponde en español con formato Markdown. Incluye comandos de terminal, fragmentos de código y ejemplos prácticos cuando sea relevante. Sé conciso pero completo. La herramienta es: "${t.label}" - ${t.desc}.`;
+  }
 };
 
-// ── CSS para AI Hub ──
-(function(){
-  const s=document.createElement('style');
-  s.textContent=`
-    .aihub-card{transition:all .25s cubic-bezier(.2,0,0,1)!important;}
-    .aihub-card.visible{opacity:1!important;transform:translateY(0)!important;}
-    .aihub-card:hover{box-shadow:var(--md-el3);transform:translateY(-3px)!important;}
-    @keyframes aihub-pulse{0%,100%{opacity:1}50%{opacity:.4}}
-  `;
-  document.head.appendChild(s);
-})();
-
-
-async function initApp(){
-const savedTheme=localStorage.getItem('urbalux-theme')||'light';
-const savedSeed=localStorage.getItem('urbalux-seed')||'#1B6EF3';
-const savedFont=localStorage.getItem('urbalux-font')||null;
-document.documentElement.setAttribute('data-theme',savedTheme);
-applyM3Theme(savedSeed,savedTheme==='dark');
-if(savedFont) setFont(savedFont);
-Auth.init();
-// Motor IA automático — no se restaura modelo manual
-// Global ResizeObserver for st-layout elements (handles zoom + resize)
-if(window.ResizeObserver) {
-  window._globalRO = new ResizeObserver(entries => {
-    entries.forEach(e => {
-      const w = e.contentRect.width;
-      e.target.style.gridTemplateColumns = w > 0 && w < 560 ? '1fr' : '';
-    });
-  });
-  const observeLayouts = () => {
-    document.querySelectorAll('.st-layout').forEach(el => {
-      if(!el.dataset.roActive) {
-        window._globalRO.observe(el);
-        el.dataset.roActive = '1';
-        const w = el.getBoundingClientRect().width;
-        el.style.gridTemplateColumns = w > 0 && w < 560 ? '1fr' : '';
-      }
-    });
-  };
-  observeLayouts();
-  // Re-observe after each tab load
-  const _origLoad = window.loadTab;
-  window.loadTab = function(...a){ const r=_origLoad?.(...a); setTimeout(observeLayouts,80); return r; };
-}
-document.querySelectorAll('.pixel-theme-card').forEach(tc=>{if(tc.getAttribute('data-seed')===savedSeed)tc.classList.add('active');});
-Chat.init();Community.init();updateThemeIcons();
-
-const hash=window.location.hash.replace('#','')||'home';
-const valid=['home','chat','sectors','studio','community','docs','aihub'];
-loadTab(valid.includes(hash)?hash:'home');}
-
-// ═══════════════ UTILITIES ═══════════════
-function escHtml(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-function runCode(id){
-  const store=window._codeStore&&window._codeStore[id];
-  if(!store) return;
-  const out=document.getElementById('run-'+id);
-  if(!out) return;
-  out.style.display='block';
-  if(store.lang==='html'||(store.lang==='javascript'&&store.code.includes('<'))){
-    const w=window.open('','_blank');
-    if(w){w.document.write(store.code);w.document.close();}
-  } else {
-    try{
-      const result=eval(store.code);
-      out.textContent='→ '+(result!==undefined?JSON.stringify(result,null,2):'(ejecutado)');
-      out.style.color='var(--md-on-surface)';
-    }catch(e){
-      out.textContent='Error: '+e.message;
-      out.style.color='var(--md-error,#EA4335)';
-    }
-  }
-}
-
-function renderMarkdown(text){
-if(!text) return '';
-let h=escHtml(text);
-h=h.replace(/```(\w*)\n?([\s\S]*?)```/g,(_,lang,code)=>{
-  const id='code-'+Math.random().toString(36).slice(2,8);
-  const codeClean=escHtml(code.trim());
-  const canRun=lang==='js'||lang==='javascript'||lang==='html';
-  const runBtn=canRun?('<button class="code-run" onclick="runCode(\''+id+'\')" style="font-size:11px;display:inline-flex;align-items:center;gap:3px"><span class="material-symbols-rounded" style="font-size:12px">play_arrow</span>Ejecutar</button>'):'';
-  // Store code for execution
-  window._codeStore=window._codeStore||{};
-  window._codeStore[id]={code:code.trim(),lang};
-  return '<div class="code-block"><div class="code-header"><span>'+(lang||'code')+'</span><div style="display:flex;gap:6px;align-items:center">'+runBtn+'<button onclick="navigator.clipboard.writeText(window._codeStore&&window._codeStore[\''+id+'\']?window._codeStore[\''+id+'\'].code:\'\')" style="border:none;background:none;cursor:pointer;color:var(--md-on-surface-variant);font-size:11px;padding:0;display:flex;align-items:center;gap:3px"><span class="material-symbols-rounded" style="font-size:13px">content_copy</span>Copiar</button></div></div><div class="code-body">'+codeClean+'</div><div id="run-'+id+'" style="display:none;background:var(--md-surface-container-highest);padding:8px;font-size:12px;font-family:monospace;white-space:pre-wrap;border-top:1px solid var(--md-outline-variant)"></div></div>';
-});h=h.replace(/`([^`]+)`/g,'<code>$1</code>');
-h=h.replace(/^### (.+)$/gm,'<h3>$1</h3>');h=h.replace(/^## (.+)$/gm,'<h2>$1</h2>');h=h.replace(/^# (.+)$/gm,'<h1>$1</h1>');
-h=h.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');h=h.replace(/\*([^*]+)\*/g,'<em>$1</em>');
-h=h.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>');
-h=h.replace(/^---+$/gm,'<hr style="border:none;border-top:1px solid var(--md-outline-variant);margin:12px 0">');
-h=h.replace(/^&gt; (.+)$/gm,'<blockquote>$1</blockquote>');
-h=h.replace(/^[-*] (.+)$/gm,'<li>$1</li>');h=h.replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>');
-h=h.replace(/^\d+\. (.+)$/gm,'<li>$1</li>');
-h=h.replace(/\n\n/g,'</p><p>');h=h.replace(/\n/g,'<br>');
-if(!h.startsWith('<')) h='<p>'+h+'</p>';
-return h;}
-function showToast(msg,dur=3000){const c=document.getElementById('toast-container');const t=document.createElement('div');t.className='md-toast';t.textContent=msg;c.appendChild(t);setTimeout(()=>t.classList.add('show'),10);setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),300);},dur);}
-function gemDotsHtml(label='Generando...'){return `<div class="gem-dots"><div class="gem-dot"></div><div class="gem-dot"></div><div class="gem-dot"></div><div class="gem-dot"></div></div><span class="gem-typing-label">${label}</span>`;}
-
-// ═══════════════ STUDIO MODAL SYSTEM ═══════════════
-function stModal(id,title,icon,colorBg,bodyHtml,footerHtml=''){
-const c=document.getElementById('st-modal-container');
-c.innerHTML=`<div class="st-modal-ov" id="stov-${id}" onclick="if(event.target===this)stClose('${id}')">
-  <div class="st-modal">
-    <div class="st-modal-hd">
-      <div class="st-modal-icon" style="background:${colorBg}">${icon}</div>
-      <div class="st-modal-title">${title}</div>
-      <button class="md-icon-button" onclick="stClose('${id}')"><span class="material-symbols-rounded" style="font-size:18px">close</span></button>
-    </div>
-    <div class="st-modal-body" id="st-body-${id}">${bodyHtml}</div>
-    ${footerHtml?`<div class="st-modal-footer">${footerHtml}</div>`:''}
-  </div>
-</div>`;
-setTimeout(()=>document.getElementById('stov-'+id)?.classList.add('open'),10);}
-function stClose(id){const el=document.getElementById('stov-'+id);if(el){el.classList.remove('open');setTimeout(()=>el.remove(),280);}}
-function stLoading(containerId){const el=document.getElementById(containerId);if(el){el.style.display='block';el.innerHTML=`<div class="st-loading">${gemDotsHtml()}</div>`;}}
-// ═══════════════ STUDIO MODEL PICKER ═══════════════
-// All models route through text.pollinations.ai (100% free, no key)
-// ── Safe arg store for onclick handlers ──
-window._A={};
-function _setA(k,v){window._A[k]=v;}
-function _getA(k){return (window._A||{})[k]||'';}
-
-
-
-
-if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initApp);
-else initApp()
-function hexToHsl(hex){
-  let r=0,g=0,b=0;
-  if(hex.length===4){r=parseInt(hex[1]+hex[1],16);g=parseInt(hex[2]+hex[2],16);b=parseInt(hex[3]+hex[3],16);}
-  else{r=parseInt(hex.slice(1,3),16);g=parseInt(hex.slice(3,5),16);b=parseInt(hex.slice(5,7),16);}
-  r/=255;g/=255;b/=255;
-  const max=Math.max(r,g,b),min=Math.min(r,g,b);
-  let h,s,l=(max+min)/2;
-  if(max===min){h=s=0;}
-  else{const d=max-min;s=l>0.5?d/(2-max-min):d/(max+min);
-    switch(max){case r:h=(g-b)/d+(g<b?6:0);break;case g:h=(b-r)/d+2;break;case b:h=(r-g)/d+4;break;}
-    h/=6;}
-  return[Math.round(h*360),Math.round(s*100),Math.round(l*100)];
-}
-function hslToHex(h,s,l){
-  s/=100;l/=100;
-  const a=s*Math.min(l,1-l);
-  const f=n=>{const k=(n+h/30)%12;const color=l-a*Math.max(Math.min(k-3,9-k,1),-1);return Math.round(255*color).toString(16).padStart(2,'0');};
-  return '#'+f(0)+f(8)+f(4);
-}
-function genTone(h,s,l){
-  const t=(n)=>hslToHex(h,Math.min(s,80),n);
-  return{p10:t(10),p20:t(20),p30:t(30),p40:t(40),p50:t(50),p60:t(60),p70:t(70),p80:t(80),p90:t(90),p95:t(95),p99:t(99),
-    n10:hslToHex(h,5,10),n20:hslToHex(h,5,20),n30:hslToHex(h,5,30),n40:hslToHex(h,5,40),n50:hslToHex(h,5,50),n60:hslToHex(h,5,60),n70:hslToHex(h,5,70),n80:hslToHex(h,5,80),n90:hslToHex(h,5,90),n95:hslToHex(h,5,95),n99:hslToHex(h,5,99),
-    e10:hslToHex(0,80,10),e20:hslToHex(0,80,20),e40:hslToHex(0,80,40),e80:hslToHex(0,80,80),e90:hslToHex(0,80,90)};
-}
 
 </script>
+
+
+
+
 
 <!-- Mobile bottom navigation -->
 <nav class="mobile-nav" id="mobile-nav">
@@ -12988,17 +13557,13 @@ function genTone(h,s,l){
       <div class="mobile-nav-ind"><span class="material-symbols-rounded">chat_bubble</span></div>
       Chat
     </button>
-    <button class="mobile-nav-btn" id="mob-studio" onclick="ev(event,'studio')">
-      <div class="mobile-nav-ind"><span class="material-symbols-rounded">auto_fix_high</span></div>
-      Studio
-    </button>
-    <button class="mobile-nav-btn" id="mob-sectors" onclick="ev(event,'sectors')">
-      <div class="mobile-nav-ind"><span class="material-symbols-rounded">grid_view</span></div>
-      Asistentes
+    <button class="mobile-nav-btn" id="mob-school" onclick="ev(event,'school')">
+      <div class="mobile-nav-ind"><span class="material-symbols-rounded">school</span></div>
+      School
     </button>
     <button class="mobile-nav-btn" id="mob-aihub" onclick="ev(event,'aihub')">
-      <div class="mobile-nav-ind"><span class="material-symbols-rounded">neurology</span></div>
-      IA Hub
+      <div class="mobile-nav-ind"><span class="material-symbols-rounded">hub</span></div>
+      Open Source
     </button>
     <button class="mobile-nav-btn" id="mob-settings" onclick="openSettings()">
       <div class="mobile-nav-ind"><span class="material-symbols-rounded">manage_accounts</span></div>
